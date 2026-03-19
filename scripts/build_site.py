@@ -32,6 +32,7 @@ CATEGORY_MAP = {
         "Aurora & Argo AI",
         "Zoox & Nuro",
         "Pony.ai & WeRide",
+        "Wayve",
     ],
     "ADAS / L2+": [
         "Tesla Autopilot / FSD",
