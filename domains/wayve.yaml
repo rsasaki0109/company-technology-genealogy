@@ -1,0 +1,78 @@
+name: Wayve
+description: >
+  UK-based autonomous driving startup pioneering end-to-end learned driving.
+  Founded by Alex Kendall (Cambridge PhD). Largest European AV funding.
+source_awesome_lists: []
+
+methods:
+- name: Wayve founded
+  year: 2017
+  tags: [founding, uk, startup]
+  parents: []
+  description: "Founded by Alex Kendall and Amar Shah in London, end-to-end learned driving approach"
+
+- name: Wayve first learned driving demo
+  year: 2018
+  tags: [demo, end-to-end, reinforcement-learning]
+  parents:
+  - name: Wayve founded
+    relation: extends
+  description: "First demo of a car learning to drive from scratch using RL in 20 minutes"
+
+- name: Wayve MILE
+  year: 2022
+  tags: [world-model, imitation-learning, prediction]
+  parents:
+  - name: Wayve first learned driving demo
+    relation: extends
+  description: "Model-based Imitation Learning for E2E driving with world model prediction"
+
+- name: GAIA-1
+  year: 2023
+  tags: [world-model, generative, video-prediction]
+  parents:
+  - name: Wayve MILE
+    relation: extends
+  description: "Generative world model for autonomous driving — 9B parameter video generation from driving data"
+
+- name: Wayve $1B Series C
+  year: 2024
+  tags: [funding, milestone, softbank]
+  parents:
+  - name: GAIA-1
+    relation: extends
+  description: "Raised $1.05B from SoftBank, NVIDIA, Microsoft — largest European AV funding round"
+
+- name: Wayve Lingo-2
+  year: 2024
+  tags: [vlm, language, driving, explainability]
+  parents:
+  - name: GAIA-1
+    relation: extends
+  description: "Vision-language-action model for driving with natural language reasoning and commentary"
+
+- name: PRISM-1
+  year: 2024
+  tags: [world-model, foundation-model, prediction]
+  parents:
+  - name: GAIA-1
+    relation: extends
+  description: "Foundation world model for predictive driving — next-gen driving world model after GAIA-1"
+
+- name: Wayve London deployment
+  year: 2024
+  tags: [deployment, uk, delivery]
+  parents:
+  - name: Wayve $1B Series C
+    relation: extends
+  description: "Autonomous delivery operations in London with Asda and Ocado partnerships"
+
+- name: Wayve Embodied AI platform
+  year: 2025
+  tags: [platform, embodied-ai, general-driving]
+  parents:
+  - name: PRISM-1
+    relation: extends
+  - name: Wayve Lingo-2
+    relation: combines
+  description: "General-purpose embodied AI driving platform targeting multiple OEMs and cities"
