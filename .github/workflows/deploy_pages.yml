@@ -25,7 +25,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install -e .
+        run: pip install pyyaml
 
       - name: Build site
         run: python scripts/build_site.py
