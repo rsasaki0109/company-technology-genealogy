@@ -1,0 +1,127 @@
+name: xAI & Mistral & DeepSeek
+description: >
+  Three major AI labs emerged in 2023 to challenge established frontier labs.
+  xAI, founded by Elon Musk, built the massive Colossus GPU cluster and
+  developed Grok models integrated into X (Twitter). Mistral AI, founded in
+  Paris by ex-DeepMind and ex-Meta researchers, became Europe's leading AI
+  company with efficient open-weight models. DeepSeek, backed by Chinese quant
+  fund High-Flyer, shocked the industry with highly capable open-source models
+  trained at a fraction of competitor costs.
+source_awesome_lists: []
+
+methods:
+  - name: "xAI Founded"
+    year: 2023
+    tags: [founding, elon-musk, startup, frontier]
+    parents: []
+    description: "Elon Musk founded xAI to build AI systems that understand the universe, recruiting from DeepMind, Google, and OpenAI"
+
+  - name: "Mistral AI Founded"
+    year: 2023
+    tags: [founding, paris, europe, ex-deepmind, ex-meta]
+    parents: []
+    description: "Arthur Mensch, Guillaume Lample, and Timothee Lacroix founded Mistral AI in Paris, Europe's highest-valued AI startup"
+
+  - name: "DeepSeek Founded"
+    year: 2023
+    tags: [founding, china, high-flyer, research]
+    parents: []
+    description: "Chinese quant hedge fund High-Flyer Capital spun out DeepSeek as a dedicated AI research lab in Hangzhou"
+
+  - name: "Mistral 7B"
+    year: 2023
+    tags: [language-model, open-source, efficient, small]
+    parents:
+      - name: "Mistral AI Founded"
+        relation: extends
+    description: "7B parameter open-weight model outperforming Llama 2 13B on most benchmarks, establishing Mistral's efficient-model reputation"
+
+  - name: "Grok-1 Open Source"
+    year: 2024
+    tags: [language-model, open-source, xai, mixture-of-experts]
+    parents:
+      - name: "xAI Founded"
+        relation: extends
+    description: "xAI open-sourced Grok-1, a 314B parameter mixture-of-experts model, the largest open-weight model at the time"
+
+  - name: "Mixtral 8x7B"
+    year: 2024
+    tags: [language-model, open-source, mixture-of-experts, efficient]
+    parents:
+      - name: "Mistral 7B"
+        relation: extends
+    description: "Sparse mixture-of-experts model matching GPT-3.5 quality while using only 13B active parameters per forward pass"
+
+  - name: "DeepSeek-V2"
+    year: 2024
+    tags: [language-model, open-source, mixture-of-experts, efficient]
+    parents:
+      - name: "DeepSeek Founded"
+        relation: extends
+    description: "236B MoE model with Multi-head Latent Attention achieving strong performance at dramatically lower training and inference cost"
+
+  - name: "Grok-2"
+    year: 2024
+    tags: [language-model, frontier, xai, multimodal]
+    parents:
+      - name: "Grok-1 Open Source"
+        relation: extends
+    description: "Frontier-class model integrated into X platform with image understanding and generation capabilities"
+
+  - name: "Mistral Large"
+    year: 2024
+    tags: [language-model, commercial, frontier, multilingual]
+    parents:
+      - name: "Mixtral 8x7B"
+        relation: extends
+    description: "Mistral's flagship commercial model competing with GPT-4 class models for enterprise and API deployment"
+
+  - name: "Pixtral (Vision-Language Model)"
+    year: 2024
+    tags: [multimodal, vision, language-model, open-source]
+    parents:
+      - name: "Mistral Large"
+        relation: extends
+    description: "Mistral's natively multimodal vision-language model processing images and text with strong visual reasoning"
+
+  - name: "Colossus Supercomputer Cluster"
+    year: 2024
+    tags: [infrastructure, gpu, nvidia, compute]
+    parents:
+      - name: "xAI Founded"
+        relation: extends
+    description: "xAI built Colossus, one of the world's largest GPU clusters with 100K+ NVIDIA H100 GPUs in Memphis, Tennessee"
+
+  - name: "DeepSeek-V3"
+    year: 2025
+    tags: [language-model, open-source, mixture-of-experts, cost-efficient]
+    parents:
+      - name: "DeepSeek-V2"
+        relation: extends
+    description: "671B MoE model matching GPT-4o quality trained for under $6M, demonstrating extreme cost efficiency in frontier AI training"
+
+  - name: "DeepSeek-R1"
+    year: 2025
+    tags: [reasoning, open-source, chain-of-thought, viral]
+    parents:
+      - name: "DeepSeek-V3"
+        relation: extends
+    description: "Open-source reasoning model rivaling o1, went viral globally and triggered US AI stock selloff over efficiency concerns"
+
+  - name: "DeepSeek Open-Source Strategy"
+    year: 2025
+    tags: [strategy, open-source, china, disruption]
+    parents:
+      - name: "DeepSeek-R1"
+        relation: extends
+    description: "DeepSeek released all models open-source with MIT license, challenging Western labs' cost assumptions and closed-model economics"
+
+  - name: "Grok-3"
+    year: 2025
+    tags: [language-model, frontier, reasoning, xai]
+    parents:
+      - name: "Grok-2"
+        relation: extends
+      - name: "Colossus Supercomputer Cluster"
+        relation: extends
+    description: "xAI's frontier model trained on Colossus cluster with strong reasoning and coding, competing with top-tier models"

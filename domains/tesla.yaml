@@ -1,0 +1,146 @@
+name: Tesla Autopilot / FSD
+description: >
+  Tesla entered the autonomous driving space in 2014 through a partnership with
+  Mobileye, rapidly iterating on its Autopilot system after a high-profile split
+  in 2016. Under the AI leadership of Andrej Karpathy (2017-2022) and later Ashok
+  Elluswamy, Tesla pursued a vision-only approach to full self-driving, culminating
+  in the end-to-end neural network architecture of FSD v12. Tesla also expanded into
+  AI infrastructure with the Dojo supercomputer and the Optimus humanoid robot program.
+source_awesome_lists: []
+
+methods:
+  - name: "Mobileye Partnership"
+    year: 2014
+    tags: [partnership, mobileye, adas]
+    parents: []
+    description: "Tesla partnered with Mobileye to integrate EyeQ3-based forward-facing camera ADAS into Model S"
+
+  - name: "Autopilot v1 (Mobileye EyeQ3)"
+    year: 2014
+    tags: [autopilot, adas, mobileye, eyeq3]
+    parents:
+      - name: "Mobileye Partnership"
+        relation: extends
+    description: "First-generation Autopilot using Mobileye EyeQ3 chip with single camera, radar, and ultrasonics"
+
+  - name: "Fatal Crash and Mobileye Split"
+    year: 2016
+    tags: [safety, corporate, split]
+    parents:
+      - name: "Autopilot v1 (Mobileye EyeQ3)"
+        relation: extends
+    description: "Fatal Model S crash in Florida while on Autopilot led to NHTSA investigation and Mobileye ending its partnership with Tesla"
+
+  - name: "Autopilot v2 (Tesla Vision + Radar)"
+    year: 2016
+    tags: [autopilot, hardware, in-house, hw2]
+    parents:
+      - name: "Fatal Crash and Mobileye Split"
+        relation: extends
+    description: "Tesla developed in-house Autopilot HW2 with 8 cameras, 12 ultrasonics, and forward radar using NVIDIA GPU"
+
+  - name: "Andrej Karpathy Joins as AI Director"
+    year: 2017
+    tags: [people, leadership, ai]
+    parents:
+      - name: "Autopilot v2 (Tesla Vision + Radar)"
+        relation: extends
+    description: "Stanford AI researcher Andrej Karpathy joined Tesla as Senior Director of AI, leading the Autopilot vision team"
+
+  - name: "HW3 (FSD Computer)"
+    year: 2019
+    tags: [hardware, chip, fsd-computer, in-house]
+    parents:
+      - name: "Autopilot v2 (Tesla Vision + Radar)"
+        relation: replaces
+    description: "Tesla-designed custom FSD chip (HW3) replacing NVIDIA hardware, delivering 144 TOPS for neural network inference"
+
+  - name: "FSD Beta Launch"
+    year: 2020
+    tags: [fsd, beta, autonomy, limited-release]
+    parents:
+      - name: "HW3 (FSD Computer)"
+        relation: extends
+    description: "Tesla released FSD Beta to a limited number of early access users, enabling city-street autonomous driving"
+
+  - name: "Vision-Only (Radar Removal)"
+    year: 2021
+    tags: [perception, vision-only, camera]
+    parents:
+      - name: "FSD Beta Launch"
+        relation: extends
+    description: "Tesla removed forward-facing radar from Model 3 and Model Y, relying solely on camera-based perception"
+
+  - name: "Andrej Karpathy Departure"
+    year: 2022
+    tags: [people, leadership]
+    parents:
+      - name: "Vision-Only (Radar Removal)"
+        relation: extends
+    description: "Andrej Karpathy left Tesla after five years; Ashok Elluswamy assumed lead of the Autopilot team"
+
+  - name: "Optimus Humanoid Robot Reveal"
+    year: 2022
+    tags: [robotics, humanoid, optimus]
+    parents:
+      - name: "HW3 (FSD Computer)"
+        relation: inspires
+    description: "Tesla unveiled the Optimus (Tesla Bot) humanoid robot prototype, leveraging FSD AI and Dojo training infrastructure"
+
+  - name: "Dojo Supercomputer"
+    year: 2023
+    tags: [infrastructure, training, supercomputer, dojo]
+    parents:
+      - name: "Vision-Only (Radar Removal)"
+        relation: extends
+    description: "Tesla began deploying Dojo, a custom-designed AI training supercomputer optimized for video data processing"
+
+  - name: "HW4"
+    year: 2023
+    tags: [hardware, chip, hw4]
+    parents:
+      - name: "HW3 (FSD Computer)"
+        relation: replaces
+    description: "Next-generation FSD hardware with higher-resolution cameras and significantly increased compute for neural networks"
+
+  - name: "FSD v12 (End-to-End Neural Network)"
+    year: 2024
+    tags: [fsd, end-to-end, neural-network, deep-learning]
+    parents:
+      - name: "HW4"
+        relation: extends
+      - name: "Dojo Supercomputer"
+        relation: extends
+    description: "Major architectural shift replacing thousands of lines of C++ with a single end-to-end neural network from photons to steering"
+
+  - name: "FSD Supervised"
+    year: 2024
+    tags: [fsd, supervised, product, consumer]
+    parents:
+      - name: "FSD v12 (End-to-End Neural Network)"
+        relation: extends
+    description: "Tesla rebranded FSD Beta as FSD Supervised, requiring driver attention while offering near-autonomous city driving"
+
+  - name: "Robotaxi (Cybercab) Unveil"
+    year: 2024
+    tags: [robotaxi, cybercab, product, event]
+    parents:
+      - name: "FSD Supervised"
+        relation: extends
+    description: "Tesla unveiled the Cybercab purpose-built robotaxi with no steering wheel or pedals at the We, Robot event"
+
+  - name: "FSD China Regulatory Push"
+    year: 2025
+    tags: [regulation, china, expansion]
+    parents:
+      - name: "FSD Supervised"
+        relation: extends
+    description: "Tesla pursued regulatory approvals and data partnerships to deploy FSD capabilities in China"
+
+  - name: "Optimus Gen-2 and Production Plans"
+    year: 2025
+    tags: [robotics, humanoid, optimus, production]
+    parents:
+      - name: "Optimus Humanoid Robot Reveal"
+        relation: extends
+    description: "Tesla advanced Optimus toward limited production with improved dexterity and autonomous task capabilities"

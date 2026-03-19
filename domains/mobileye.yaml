@@ -1,0 +1,124 @@
+name: Mobileye
+description: >
+  Mobileye was founded in 1999 in Jerusalem, Israel by Amnon Shashua and Ziv Aviram,
+  pioneering vision-based ADAS using custom EyeQ chips. After a high-profile partnership
+  and split with Tesla, Mobileye was acquired by Intel for $15.3 billion in 2017 and
+  re-IPOed in 2022. The company develops both the SuperVision L2+ and Chauffeur L4
+  autonomous driving systems, alongside the REM crowd-sourced mapping and RSS safety
+  frameworks.
+source_awesome_lists: []
+
+methods:
+  - name: "Mobileye Founded"
+    year: 1999
+    tags: [founding, israel, adas, vision]
+    parents: []
+    description: "Amnon Shashua and Ziv Aviram founded Mobileye in Jerusalem to develop vision-based driver assistance technology"
+
+  - name: "EyeQ1 Chip"
+    year: 2008
+    tags: [hardware, chip, eyeq1, adas]
+    parents:
+      - name: "Mobileye Founded"
+        relation: extends
+    description: "First-generation EyeQ vision processing chip for automotive ADAS applications"
+
+  - name: "EyeQ3 + Tesla Partnership"
+    year: 2014
+    tags: [hardware, chip, eyeq3, tesla, partnership]
+    parents:
+      - name: "EyeQ1 Chip"
+        relation: extends
+    description: "EyeQ3 chip supplied to Tesla for Autopilot v1, bringing Mobileye technology to a mass-market EV"
+
+  - name: "Mobileye IPO on NYSE"
+    year: 2014
+    tags: [corporate, ipo, nyse]
+    parents:
+      - name: "EyeQ3 + Tesla Partnership"
+        relation: extends
+    description: "Mobileye went public on the New York Stock Exchange, valuing the company at approximately $5.3 billion"
+
+  - name: "Tesla Split"
+    year: 2016
+    tags: [corporate, split, tesla]
+    parents:
+      - name: "EyeQ3 + Tesla Partnership"
+        relation: extends
+    description: "Mobileye ended its partnership with Tesla following disagreements over Autopilot safety and branding"
+
+  - name: "Intel Acquires Mobileye ($15.3B)"
+    year: 2017
+    tags: [corporate, acquisition, intel]
+    parents:
+      - name: "Tesla Split"
+        relation: extends
+    description: "Intel acquired Mobileye for $15.3 billion, the largest Israeli tech acquisition at the time"
+
+  - name: "RSS (Responsibility-Sensitive Safety) Framework"
+    year: 2017
+    tags: [safety, framework, rss, research]
+    parents:
+      - name: "Intel Acquires Mobileye ($15.3B)"
+        relation: extends
+    description: "Mobileye proposed RSS, a formal mathematical model for safe autonomous driving decision-making"
+
+  - name: "REM (Road Experience Management)"
+    year: 2018
+    tags: [mapping, crowdsource, rem, hd-map]
+    parents:
+      - name: "Intel Acquires Mobileye ($15.3B)"
+        relation: extends
+    description: "Crowd-sourced HD mapping system leveraging data from millions of Mobileye-equipped vehicles on the road"
+
+  - name: "EyeQ5"
+    year: 2021
+    tags: [hardware, chip, eyeq5]
+    parents:
+      - name: "EyeQ3 + Tesla Partnership"
+        relation: extends
+    description: "Fifth-generation EyeQ chip with significantly increased compute for L2+ and L4 autonomous driving"
+
+  - name: "Mobileye Re-IPO"
+    year: 2022
+    tags: [corporate, ipo, nasdaq]
+    parents:
+      - name: "Intel Acquires Mobileye ($15.3B)"
+        relation: extends
+    description: "Intel took Mobileye public again on NASDAQ, initially valuing the unit at approximately $17 billion"
+
+  - name: "SuperVision (L2+)"
+    year: 2022
+    tags: [product, l2-plus, supervision, adas]
+    parents:
+      - name: "EyeQ5"
+        relation: extends
+      - name: "REM (Road Experience Management)"
+        relation: extends
+    description: "Camera-based L2+ hands-free driving system deployed on Zeekr and Polestar vehicles"
+
+  - name: "Chauffeur (L4) Program"
+    year: 2022
+    tags: [product, l4, chauffeur, autonomy]
+    parents:
+      - name: "SuperVision (L2+)"
+        relation: extends
+      - name: "RSS (Responsibility-Sensitive Safety) Framework"
+        relation: extends
+    description: "L4 autonomous driving program combining camera-first perception with LiDAR and radar for full autonomy"
+
+  - name: "Amnon Shashua as CEO"
+    year: 2022
+    tags: [people, leadership, ceo]
+    parents:
+      - name: "Mobileye Re-IPO"
+        relation: extends
+    description: "Co-founder Amnon Shashua continued as CEO through the re-IPO, steering Mobileye's L4 strategy"
+
+  - name: "EyeQ6"
+    year: 2024
+    tags: [hardware, chip, eyeq6]
+    parents:
+      - name: "EyeQ5"
+        relation: replaces
+    description: "Sixth-generation EyeQ chip on 5nm process offering higher efficiency for next-generation ADAS and AD systems"

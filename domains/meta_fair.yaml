@@ -1,0 +1,110 @@
+name: Meta FAIR
+description: >
+  Meta's Fundamental AI Research (FAIR) lab was founded in 2013 under Yann LeCun
+  and has been a major contributor to open-source AI infrastructure and research.
+  FAIR created PyTorch (now the dominant deep learning framework), pioneered
+  self-supervised vision (DINO), and released the LLaMA/Llama family of open
+  language models. Meta's open-source strategy contrasts with closed-model
+  competitors, while Reality Labs pursues AR/VR hardware integration.
+source_awesome_lists: []
+
+methods:
+  - name: "Facebook AI Research (FAIR) Founded"
+    year: 2013
+    tags: [founding, research, yann-lecun, deep-learning]
+    parents: []
+    description: "Mark Zuckerberg recruited Yann LeCun to lead Facebook AI Research, establishing a world-class deep learning lab"
+
+  - name: "PyTorch Released"
+    year: 2017
+    tags: [open-source, framework, deep-learning, infrastructure]
+    parents:
+      - name: "Facebook AI Research (FAIR) Founded"
+        relation: extends
+    description: "FAIR released PyTorch, a dynamic computation graph framework that became the dominant tool for AI research and production"
+
+  - name: "DINO (Self-Supervised Vision)"
+    year: 2021
+    tags: [research, self-supervised, vision, representation]
+    parents:
+      - name: "Facebook AI Research (FAIR) Founded"
+        relation: extends
+    description: "Self-distillation method for Vision Transformers learning powerful visual features without labeled data"
+
+  - name: "Meta Reality Labs (AR/VR)"
+    year: 2021
+    tags: [hardware, ar, vr, metaverse, quest]
+    parents:
+      - name: "Facebook AI Research (FAIR) Founded"
+        relation: extends
+    description: "Facebook rebranded to Meta and expanded Reality Labs division building Quest VR headsets and AR glasses"
+
+  - name: "LLaMA (Large Language Model Meta AI)"
+    year: 2023
+    tags: [language-model, open-source, research, efficient]
+    parents:
+      - name: "PyTorch Released"
+        relation: extends
+    description: "Open-weight language models (7B-65B) matching GPT-3 quality, leaked publicly and catalyzing open-source LLM movement"
+
+  - name: "DINOv2"
+    year: 2023
+    tags: [research, self-supervised, vision, foundation-model]
+    parents:
+      - name: "DINO (Self-Supervised Vision)"
+        relation: extends
+    description: "Scaled self-supervised vision model producing universal visual features competitive with weakly-supervised approaches"
+
+  - name: "SAM (Segment Anything Model)"
+    year: 2023
+    tags: [segmentation, vision, foundation-model, open-source]
+    parents:
+      - name: "Facebook AI Research (FAIR) Founded"
+        relation: extends
+    description: "Promptable segmentation foundation model trained on 1B+ masks, enabling zero-shot segmentation of any object"
+
+  - name: "Llama 2"
+    year: 2023
+    tags: [language-model, open-source, commercial, chat]
+    parents:
+      - name: "LLaMA (Large Language Model Meta AI)"
+        relation: extends
+    description: "Open-source models (7B-70B) with commercial license, trained on 2T tokens with RLHF chat fine-tuning"
+
+  - name: "Llama 3"
+    year: 2024
+    tags: [language-model, open-source, frontier, multilingual]
+    parents:
+      - name: "Llama 2"
+        relation: extends
+    description: "Major upgrade (8B-405B) trained on 15T+ tokens, approaching GPT-4 level as the strongest open-weight model family"
+
+  - name: "SAM 2 (Segment Anything in Videos)"
+    year: 2024
+    tags: [segmentation, video, vision, open-source]
+    parents:
+      - name: "SAM (Segment Anything Model)"
+        relation: extends
+    description: "Extended SAM to video with streaming architecture for real-time promptable segmentation across video frames"
+
+  - name: "Meta Open Source AI Strategy"
+    year: 2024
+    tags: [strategy, open-source, ecosystem, competitive]
+    parents:
+      - name: "Llama 3"
+        relation: extends
+    description: "Meta committed to open-sourcing frontier models as strategic moat, building ecosystem and countering closed-model dominance"
+
+  - name: "Llama 4"
+    year: 2025
+    tags: [language-model, open-source, mixture-of-experts, frontier]
+    parents:
+      - name: "Llama 3"
+        relation: extends
+    description: "Next-generation open model family using mixture-of-experts architecture for improved efficiency and performance"
+
+  - name: "Yann LeCun (Chief AI Scientist)"
+    year: 2013
+    tags: [people, leadership, turing-award, vision]
+    parents: []
+    description: "Turing Award winner Yann LeCun has led Meta AI research since 2013, championing open science and self-supervised learning"

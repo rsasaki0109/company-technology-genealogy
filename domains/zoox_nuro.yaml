@@ -1,0 +1,104 @@
+name: Zoox & Nuro
+description: >
+  Zoox and Nuro represent distinct approaches to autonomous vehicles. Zoox,
+  founded in 2014, is building a purpose-built bidirectional robotaxi and was
+  acquired by Amazon in 2020 for $1.2B. Nuro, founded in 2016 by ex-Waymo
+  engineers Dave Ferguson and Jiajun Zhu, focuses on autonomous last-mile
+  delivery with small, occupant-free vehicles. Both companies emerged from the
+  Google/Waymo talent ecosystem.
+source_awesome_lists: []
+
+methods:
+  - name: "Zoox Founded"
+    year: 2014
+    tags: [founding, startup, robotaxi, purpose-built]
+    parents: []
+    description: "Jesse Levinson and Tim Kentley-Klay founded Zoox in Foster City to build a ground-up autonomous robotaxi"
+
+  - name: "Nuro Founded"
+    year: 2016
+    tags: [founding, startup, delivery, ex-waymo]
+    parents: []
+    description: "Dave Ferguson and Jiajun Zhu (both ex-Waymo principal engineers) founded Nuro for autonomous last-mile delivery"
+
+  - name: "Zoox Bidirectional Vehicle Design"
+    year: 2018
+    tags: [design, hardware, bidirectional, carriage-style]
+    parents:
+      - name: "Zoox Founded"
+        relation: extends
+    description: "Unique bidirectional vehicle architecture with four-wheel steering and no front/back distinction"
+
+  - name: "Amazon Acquires Zoox"
+    year: 2020
+    tags: [acquisition, amazon, corporate]
+    parents:
+      - name: "Zoox Founded"
+        relation: extends
+    description: "Amazon acquired Zoox for approximately $1.2 billion, providing capital for vehicle production and testing"
+
+  - name: "Zoox Purpose-Built Robotaxi Revealed"
+    year: 2020
+    tags: [hardware, robotaxi, reveal, production-intent]
+    parents:
+      - name: "Zoox Bidirectional Vehicle Design"
+        relation: extends
+      - name: "Amazon Acquires Zoox"
+        relation: extends
+    description: "Zoox publicly revealed its production-intent bidirectional robotaxi with carriage-style seating for four passengers"
+
+  - name: "Nuro R2 Delivery Vehicle"
+    year: 2020
+    tags: [hardware, delivery, r2, autonomous]
+    parents:
+      - name: "Nuro Founded"
+        relation: extends
+    description: "Second-generation autonomous delivery bot, first vehicle to receive NHTSA exemption from certain FMVSS requirements"
+
+  - name: "Nuro Partnerships with FedEx and Kroger"
+    year: 2021
+    tags: [partnership, fedex, kroger, delivery, commercial]
+    parents:
+      - name: "Nuro R2 Delivery Vehicle"
+        relation: extends
+    description: "Commercial delivery partnerships with FedEx, Kroger, Domino's, and others for last-mile autonomous delivery"
+
+  - name: "Nuro R3 (Third Generation)"
+    year: 2022
+    tags: [hardware, delivery, r3, next-gen]
+    parents:
+      - name: "Nuro R2 Delivery Vehicle"
+        relation: extends
+    description: "Third-generation delivery vehicle designed with BYD partnership, larger cargo capacity and improved sensors"
+
+  - name: "Zoox Testing SF and Las Vegas"
+    year: 2023
+    tags: [testing, san-francisco, las-vegas, urban]
+    parents:
+      - name: "Zoox Purpose-Built Robotaxi Revealed"
+        relation: extends
+    description: "Zoox expanded autonomous testing of its purpose-built vehicle to San Francisco and Las Vegas public roads"
+
+  - name: "Nuro Layoffs and Strategic Pivot"
+    year: 2023
+    tags: [restructuring, layoffs, pivot]
+    parents:
+      - name: "Nuro Partnerships with FedEx and Kroger"
+        relation: replaces
+    description: "Nuro laid off ~30% of workforce and paused commercial delivery operations to refocus strategy and reduce burn"
+
+  - name: "Nuro Re-focus on Autonomy Platform"
+    year: 2024
+    tags: [strategy, platform, licensing]
+    parents:
+      - name: "Nuro Layoffs and Strategic Pivot"
+        relation: extends
+    description: "Nuro pivoted toward licensing its autonomous driving platform to OEMs and partners beyond proprietary delivery bots"
+
+  - name: "Zoox Public Rides"
+    year: 2025
+    tags: [robotaxi, public, commercial, las-vegas]
+    parents:
+      - name: "Zoox Testing SF and Las Vegas"
+        relation: extends
+    description: "Zoox began offering rides to the public in its purpose-built robotaxi, initially in Las Vegas"

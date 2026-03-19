@@ -1,0 +1,81 @@
+name: SLAM Companies
+description: >
+  Companies specializing in Simultaneous Localization and Mapping (SLAM)
+  technology for robotics, autonomous systems, and spatial computing. Kudan
+  pioneered commercial SLAM SDKs from Japan, SLAMcore brought dense SLAM to
+  embedded devices before being acquired by ARM, and NavVis built large-scale
+  indoor mapping and digital twin solutions from Munich.
+source_awesome_lists: []
+
+methods:
+  - name: "NavVis founded Munich"
+    year: 2013
+    tags: [navvis, founded, munich, indoor-mapping]
+    parents: []
+    description: "NavVis founded in Munich as a spin-off from TU Munich to commercialize indoor mapping and positioning"
+
+  - name: "Kudan founded Japan"
+    year: 2014
+    tags: [kudan, founded, japan, slam]
+    parents: []
+    description: "Kudan founded in Bristol/Japan to develop high-performance SLAM algorithms for commercial licensing"
+
+  - name: "Kudan Visual SLAM SDK"
+    year: 2016
+    tags: [kudan, visual-slam, sdk, ar]
+    parents:
+      - name: "Kudan founded Japan"
+        relation: extends
+    description: "Kudan released visual SLAM SDK for AR and robotics applications, licensed to device manufacturers"
+
+  - name: "SLAMcore founded"
+    year: 2016
+    tags: [slamcore, founded, london, spatial-ai]
+    parents: []
+    description: "SLAMcore founded in London by Imperial College researchers to bring dense SLAM to embedded robotics"
+
+  - name: "NavVis VLX indoor mapper"
+    year: 2017
+    tags: [navvis, vlx, wearable, indoor-mapping, lidar]
+    parents:
+      - name: "NavVis founded Munich"
+        relation: extends
+    description: "NavVis launched VLX wearable indoor mapping system combining LiDAR and cameras for rapid capture"
+
+  - name: "Kudan IPO Tokyo"
+    year: 2018
+    tags: [kudan, ipo, tokyo, stock-exchange]
+    parents:
+      - name: "Kudan Visual SLAM SDK"
+        relation: extends
+    description: "Kudan listed on the Tokyo Stock Exchange, one of few pure SLAM technology companies to go public"
+
+  - name: "Viso.ai SLAM platform"
+    year: 2018
+    tags: [viso-ai, visual-slam, computer-vision, platform]
+    parents: []
+    description: "Viso.ai launched computer vision platform including visual SLAM capabilities for enterprise applications"
+
+  - name: "Kudan LiDAR SLAM"
+    year: 2020
+    tags: [kudan, lidar-slam, 3d-mapping, sdk]
+    parents:
+      - name: "Kudan Visual SLAM SDK"
+        relation: extends
+    description: "Kudan expanded SDK to include LiDAR SLAM for large-scale 3D mapping and autonomous navigation"
+
+  - name: "NavVis digital twin platform"
+    year: 2020
+    tags: [navvis, digital-twin, ivion, cloud]
+    parents:
+      - name: "NavVis VLX indoor mapper"
+        relation: extends
+    description: "NavVis launched IVION cloud platform for managing indoor digital twins and spatial data at scale"
+
+  - name: "SLAMcore acquired by ARM"
+    year: 2023
+    tags: [slamcore, arm, acquisition, spatial-ai]
+    parents:
+      - name: "SLAMcore founded"
+        relation: extends
+    description: "ARM acquired SLAMcore to integrate spatial AI and SLAM capabilities into its processor ecosystem"

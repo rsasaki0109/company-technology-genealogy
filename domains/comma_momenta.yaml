@@ -1,0 +1,96 @@
+name: Comma.ai & Momenta
+description: >
+  Comma.ai, founded by George Hotz in 2015, pioneered open-source consumer ADAS with
+  openpilot, building an engaged community and affordable aftermarket hardware. Momenta,
+  founded in 2016 in Beijing, pursues a two-pronged strategy with mass-production ADAS
+  (Mpilot) and L4 autonomous driving (MSD), securing major partnerships with Toyota,
+  BYD, and SAIC. Both companies represent alternative approaches to the autonomous
+  driving problem outside the traditional OEM and robotaxi paradigms.
+source_awesome_lists: []
+
+methods:
+  - name: "Comma.ai Founded by George Hotz"
+    year: 2015
+    tags: [founding, comma-ai, george-hotz, adas]
+    parents: []
+    description: "Hacker George Hotz founded Comma.ai to build affordable aftermarket self-driving hardware and software"
+
+  - name: "openpilot Open Source Release"
+    year: 2016
+    tags: [open-source, openpilot, adas, software]
+    parents:
+      - name: "Comma.ai Founded by George Hotz"
+        relation: extends
+    description: "Comma.ai open-sourced openpilot, an L2 ADAS system supporting Honda, Toyota, and other vehicles"
+
+  - name: "Momenta Founded"
+    year: 2016
+    tags: [founding, momenta, china, autonomous-driving]
+    parents: []
+    description: "Momenta founded in Beijing by Cao Xudong, focusing on data-driven autonomous driving for mass production"
+
+  - name: "Momenta Mpilot (Mass Production ADAS)"
+    year: 2019
+    tags: [product, mpilot, adas, mass-production]
+    parents:
+      - name: "Momenta Founded"
+        relation: extends
+    description: "Mpilot L2+ ADAS product for mass-production vehicles, generating real-world driving data at scale"
+
+  - name: "Comma 2 Device"
+    year: 2020
+    tags: [hardware, comma-2, aftermarket, consumer]
+    parents:
+      - name: "openpilot Open Source Release"
+        relation: extends
+    description: "Second-generation Comma hardware device with integrated camera and compute for running openpilot"
+
+  - name: "Momenta MSD (L4 Robotaxi)"
+    year: 2021
+    tags: [product, msd, l4, robotaxi]
+    parents:
+      - name: "Momenta Mpilot (Mass Production ADAS)"
+        relation: extends
+    description: "Momenta's L4 autonomous driving system for robotaxi deployment, trained using Mpilot fleet data"
+
+  - name: "Comma 3"
+    year: 2022
+    tags: [hardware, comma-3, aftermarket, consumer]
+    parents:
+      - name: "Comma 2 Device"
+        relation: replaces
+    description: "Third-generation device with improved cameras and Qualcomm Snapdragon compute for enhanced openpilot performance"
+
+  - name: "Comma Body (Open Robot Hardware)"
+    year: 2023
+    tags: [robotics, hardware, open-source, comma-body]
+    parents:
+      - name: "Comma 3"
+        relation: inspires
+    description: "Open-source robot hardware platform by Comma.ai, extending their AI capabilities beyond automotive"
+
+  - name: "Momenta + Toyota Partnership"
+    year: 2023
+    tags: [partnership, toyota, japan, adas]
+    parents:
+      - name: "Momenta MSD (L4 Robotaxi)"
+        relation: extends
+    description: "Toyota invested in Momenta and partnered to integrate Momenta's autonomous driving technology in future vehicles"
+
+  - name: "openpilot 200M+ Miles"
+    year: 2024
+    tags: [milestone, data, openpilot, fleet]
+    parents:
+      - name: "Comma 3"
+        relation: extends
+    description: "openpilot community surpassed 200 million miles of driving data, one of the largest open ADAS datasets"
+
+  - name: "Momenta BYD/SAIC Partnerships"
+    year: 2024
+    tags: [partnership, byd, saic, china, mass-production]
+    parents:
+      - name: "Momenta Mpilot (Mass Production ADAS)"
+        relation: extends
+      - name: "Momenta + Toyota Partnership"
+        relation: extends
+    description: "Momenta expanded mass-production ADAS partnerships with BYD and SAIC for high-volume Chinese market vehicles"
