@@ -1,0 +1,170 @@
+name: OpenAI
+description: >
+  OpenAI was founded in 2015 as a non-profit AI research lab by Sam Altman,
+  Elon Musk, Ilya Sutskever, Greg Brockman, and others. It transitioned to a
+  capped-profit structure in 2019 and became the most prominent AI company after
+  the launch of ChatGPT in 2022. OpenAI's GPT series, DALL-E, and reasoning
+  models have defined the frontier of large language models, with Microsoft as
+  its primary investor and partner.
+source_awesome_lists: []
+
+methods:
+  - name: "OpenAI Founded"
+    year: 2015
+    tags: [founding, non-profit, research, ai-safety]
+    parents: []
+    description: "Sam Altman, Elon Musk, Ilya Sutskever, and others founded OpenAI as a non-profit AI research lab in San Francisco"
+
+  - name: "OpenAI Gym"
+    year: 2016
+    tags: [open-source, reinforcement-learning, toolkit, research]
+    parents:
+      - name: "OpenAI Founded"
+        relation: extends
+    description: "Open-source toolkit for developing and benchmarking reinforcement learning algorithms, widely adopted in RL research"
+
+  - name: "GPT-1"
+    year: 2018
+    tags: [language-model, transformer, generative, research]
+    parents:
+      - name: "OpenAI Founded"
+        relation: extends
+    description: "First Generative Pre-trained Transformer demonstrating unsupervised language understanding via large-scale pre-training"
+
+  - name: "OpenAI LP (Capped-Profit Structure)"
+    year: 2019
+    tags: [corporate, restructuring, capped-profit]
+    parents:
+      - name: "OpenAI Founded"
+        relation: extends
+    description: "OpenAI restructured from non-profit to capped-profit entity to attract investment capital for scaling compute"
+
+  - name: "GPT-2"
+    year: 2019
+    tags: [language-model, transformer, text-generation]
+    parents:
+      - name: "GPT-1"
+        relation: extends
+    description: "1.5B parameter model with notably coherent text generation, initially withheld over misuse concerns"
+
+  - name: "Microsoft Partnership ($1B Investment)"
+    year: 2019
+    tags: [partnership, microsoft, investment, azure]
+    parents:
+      - name: "OpenAI LP (Capped-Profit Structure)"
+        relation: extends
+    description: "Microsoft invested $1B in OpenAI and became exclusive cloud provider, beginning a multi-billion dollar partnership"
+
+  - name: "GPT-3"
+    year: 2020
+    tags: [language-model, transformer, api, few-shot]
+    parents:
+      - name: "GPT-2"
+        relation: extends
+    description: "175B parameter model demonstrating strong few-shot learning, launched as an API and catalyzing the LLM application wave"
+
+  - name: "DALL-E"
+    year: 2021
+    tags: [image-generation, multimodal, text-to-image]
+    parents:
+      - name: "GPT-3"
+        relation: extends
+    description: "Text-to-image generation model creating novel images from natural language descriptions using transformer architecture"
+
+  - name: "ChatGPT Launch"
+    year: 2022
+    tags: [chatbot, rlhf, consumer, viral]
+    parents:
+      - name: "GPT-3"
+        relation: extends
+    description: "Conversational interface to GPT-3.5 using RLHF that reached 100M users in two months, defining the generative AI era"
+
+  - name: "Microsoft Extends Investment ($13B+)"
+    year: 2023
+    tags: [partnership, microsoft, investment, mega-round]
+    parents:
+      - name: "Microsoft Partnership ($1B Investment)"
+        relation: extends
+    description: "Microsoft invested an additional $10B+ in OpenAI, deepening Azure integration and Copilot product collaboration"
+
+  - name: "GPT-4"
+    year: 2023
+    tags: [language-model, multimodal, reasoning, frontier]
+    parents:
+      - name: "ChatGPT Launch"
+        relation: extends
+    description: "Multimodal frontier model with significantly improved reasoning, coding, and instruction-following capabilities"
+
+  - name: "GPT-4V (Vision)"
+    year: 2023
+    tags: [multimodal, vision, image-understanding]
+    parents:
+      - name: "GPT-4"
+        relation: extends
+    description: "GPT-4 with native image input capabilities for visual question answering, OCR, and image analysis"
+
+  - name: "DALL-E 3"
+    year: 2023
+    tags: [image-generation, text-to-image, improved]
+    parents:
+      - name: "DALL-E"
+        relation: extends
+      - name: "GPT-4"
+        relation: extends
+    description: "Third-generation image model with much improved prompt following and text rendering, integrated into ChatGPT"
+
+  - name: "Sam Altman Firing and Return"
+    year: 2023
+    tags: [corporate, leadership, board, crisis]
+    parents:
+      - name: "GPT-4"
+        relation: extends
+    description: "OpenAI board fired Sam Altman as CEO; near-total staff revolt led to his return within five days with a reconstituted board"
+
+  - name: "Sora Video Generation"
+    year: 2024
+    tags: [video-generation, diffusion, multimodal]
+    parents:
+      - name: "DALL-E 3"
+        relation: extends
+    description: "Text-to-video diffusion model generating high-fidelity minute-long videos with coherent motion and scene understanding"
+
+  - name: "GPT-4o"
+    year: 2024
+    tags: [multimodal, omni, real-time, voice]
+    parents:
+      - name: "GPT-4V (Vision)"
+        relation: extends
+    description: "Omni model natively processing text, audio, and vision with real-time voice conversation capabilities"
+
+  - name: "o1 Reasoning Model"
+    year: 2024
+    tags: [reasoning, chain-of-thought, inference-time, frontier]
+    parents:
+      - name: "GPT-4o"
+        relation: extends
+    description: "Reasoning-focused model using extended inference-time compute via chain-of-thought for math, science, and coding"
+
+  - name: "Robotics Partnerships (Figure, 1X)"
+    year: 2024
+    tags: [partnership, robotics, embodied-ai, humanoid]
+    parents:
+      - name: "GPT-4V (Vision)"
+        relation: extends
+    description: "OpenAI partnered with Figure AI and invested in 1X Technologies to bring multimodal AI to humanoid robotics"
+
+  - name: "o3 Reasoning Model"
+    year: 2025
+    tags: [reasoning, chain-of-thought, improved, frontier]
+    parents:
+      - name: "o1 Reasoning Model"
+        relation: extends
+    description: "Next-generation reasoning model with stronger performance on math olympiad, coding, and scientific reasoning benchmarks"
+
+  - name: "GPT-4.1"
+    year: 2025
+    tags: [language-model, coding, instruction-following, api]
+    parents:
+      - name: "GPT-4o"
+        relation: extends
+    description: "API-focused model optimized for coding and instruction-following with improved long-context performance"

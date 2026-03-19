@@ -1,0 +1,164 @@
+name: Waymo
+description: >
+  Waymo originated as Google's Self-Driving Car Project in 2009, becoming the
+  longest-running autonomous vehicle program in the industry. It spun off from
+  Google X as an Alphabet subsidiary in 2016 under CEO John Krafcik, later
+  succeeded by co-CEO Tekedra Mawakana and CTO Dmitri Dolgov (now sole CEO).
+  Waymo operates the world's first commercial autonomous ride-hail service,
+  Waymo One, across multiple U.S. cities.
+source_awesome_lists: []
+
+methods:
+  - name: "Google Self-Driving Car Project"
+    year: 2009
+    tags: [autonomous-driving, research, google-x]
+    parents: []
+    description: "Google X moonshot led by Sebastian Thrun and Chris Urmson using modified Toyota Prius and Lexus vehicles"
+
+  - name: "ChauffeurNet"
+    year: 2012
+    tags: [research, imitation-learning, planning]
+    parents:
+      - name: "Google Self-Driving Car Project"
+        relation: extends
+    description: "Foundational research on learning-based driving policy via imitation learning from expert demonstrations"
+
+  - name: "Firefly Prototype"
+    year: 2014
+    tags: [hardware, prototype, purpose-built]
+    parents:
+      - name: "Google Self-Driving Car Project"
+        relation: extends
+    description: "Google's first purpose-built self-driving pod car with no steering wheel or pedals, limited to 25 mph"
+
+  - name: "Waymo Spin-off from Google X"
+    year: 2016
+    tags: [corporate, alphabet, spin-off]
+    parents:
+      - name: "Google Self-Driving Car Project"
+        relation: extends
+      - name: "Firefly Prototype"
+        relation: extends
+    description: "Self-Driving Car Project became Waymo LLC, an independent Alphabet subsidiary, with John Krafcik as CEO"
+
+  - name: "Chris Urmson Departure to Aurora"
+    year: 2016
+    tags: [people, leadership]
+    parents:
+      - name: "Google Self-Driving Car Project"
+        relation: inspires
+    description: "Former Google SDC technical lead Chris Urmson left to co-found Aurora Innovation"
+
+  - name: "Waymo One Ride-Hail Launch Phoenix"
+    year: 2018
+    tags: [robotaxi, ride-hail, phoenix, commercial]
+    parents:
+      - name: "Waymo Spin-off from Google X"
+        relation: extends
+    description: "World's first commercial autonomous ride-hail service launched in Chandler, Arizona metro area"
+
+  - name: "MultiPath++"
+    year: 2019
+    tags: [research, prediction, motion-forecasting]
+    parents:
+      - name: "ChauffeurNet"
+        relation: extends
+    description: "Multi-agent trajectory prediction model producing diverse future trajectories with associated probabilities"
+
+  - name: "5th-Gen Hardware on Jaguar I-PACE"
+    year: 2020
+    tags: [hardware, sensor-suite, lidar, jaguar]
+    parents:
+      - name: "Waymo One Ride-Hail Launch Phoenix"
+        relation: extends
+    description: "Fifth-generation sensor and compute suite integrated on Jaguar I-PACE EV platform for ride-hail fleet"
+
+  - name: "Waymo Driver (5th-Gen Sensor Suite)"
+    year: 2020
+    tags: [perception, sensor-fusion, autonomy-stack]
+    parents:
+      - name: "5th-Gen Hardware on Jaguar I-PACE"
+        relation: extends
+    description: "Unified autonomy system brand encompassing perception, prediction, and planning across vehicle platforms"
+
+  - name: "Waymo Via (Trucking)"
+    year: 2020
+    tags: [trucking, logistics, freight]
+    parents:
+      - name: "Waymo Driver (5th-Gen Sensor Suite)"
+        relation: extends
+    description: "Trucking division applying Waymo Driver to Class 8 trucks for autonomous freight on highways"
+
+  - name: "Waymo Open Motion Dataset (WOMD)"
+    year: 2021
+    tags: [dataset, research, motion-forecasting, open-source]
+    parents:
+      - name: "MultiPath++"
+        relation: extends
+    description: "Large-scale motion dataset with 100K+ scenarios for benchmarking prediction and planning research"
+
+  - name: "Waymo One SF Expansion"
+    year: 2022
+    tags: [robotaxi, san-francisco, expansion]
+    parents:
+      - name: "Waymo One Ride-Hail Launch Phoenix"
+        relation: extends
+    description: "Waymo One autonomous ride-hail service expanded to San Francisco for public riders"
+
+  - name: "WayFormer"
+    year: 2022
+    tags: [research, transformer, prediction]
+    parents:
+      - name: "MultiPath++"
+        relation: extends
+    description: "Transformer-based architecture for joint scene-level motion forecasting of road agents"
+
+  - name: "6th-Gen Hardware (LiDAR Roof Unit Removal)"
+    year: 2023
+    tags: [hardware, sensor-suite, cost-reduction, 6th-gen]
+    parents:
+      - name: "5th-Gen Hardware on Jaguar I-PACE"
+        relation: replaces
+    description: "Sixth-generation sensor suite removing rooftop LiDAR spinner for lower-profile, lower-cost design on Geely Zeekr"
+
+  - name: "Waymo One LA and Austin Expansion"
+    year: 2024
+    tags: [robotaxi, los-angeles, austin, expansion]
+    parents:
+      - name: "Waymo One SF Expansion"
+        relation: extends
+    description: "Waymo One expanded to Los Angeles and Austin, significantly growing driverless ride-hail coverage"
+
+  - name: "Partnership with Uber Eats"
+    year: 2024
+    tags: [partnership, delivery, uber]
+    parents:
+      - name: "Waymo Driver (5th-Gen Sensor Suite)"
+        relation: extends
+    description: "Waymo autonomous vehicles began delivering Uber Eats orders in Phoenix metro area"
+
+  - name: "EMMA (End-to-End Multimodal Model for AD)"
+    year: 2024
+    tags: [research, end-to-end, multimodal, foundation-model]
+    parents:
+      - name: "WayFormer"
+        relation: extends
+      - name: "Waymo Driver (5th-Gen Sensor Suite)"
+        relation: extends
+    description: "End-to-end multimodal model leveraging Gemini foundation model for autonomous driving perception and planning"
+
+  - name: "Dmitri Dolgov as Sole CEO"
+    year: 2024
+    tags: [people, leadership, ceo]
+    parents:
+      - name: "Waymo Spin-off from Google X"
+        relation: extends
+    description: "CTO Dmitri Dolgov became sole CEO after Tekedra Mawakana's departure, consolidating technical leadership"
+
+  - name: "Waymo + Geely Partnership (Zeekr)"
+    year: 2025
+    tags: [partnership, geely, zeekr, 6th-gen, manufacturing]
+    parents:
+      - name: "6th-Gen Hardware (LiDAR Roof Unit Removal)"
+        relation: extends
+    description: "Strategic partnership with Geely to produce Zeekr-based robotaxi vehicles integrating 6th-gen hardware at scale"

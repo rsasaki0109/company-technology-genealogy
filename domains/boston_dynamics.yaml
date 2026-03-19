@@ -1,0 +1,124 @@
+name: Boston Dynamics & Hyundai
+description: >
+  Boston Dynamics was founded in 1992 as a spin-off from MIT by Marc Raibert,
+  initially focused on legged locomotion research funded by DARPA. The company
+  changed hands from Google (2013) to SoftBank (2017) to Hyundai (2021), which
+  now holds an 80% controlling stake. Boston Dynamics commercialized its Spot
+  quadruped robot and developed the Atlas humanoid, transitioning from hydraulic
+  to fully electric systems in 2024.
+source_awesome_lists: []
+
+methods:
+  - name: "Boston Dynamics Founded at MIT"
+    year: 1992
+    tags: [founding, mit, legged-locomotion, research]
+    parents: []
+    description: "Marc Raibert founded Boston Dynamics as an MIT spin-off focused on legged robot research and dynamic locomotion"
+
+  - name: "BigDog DARPA Quadruped"
+    year: 2005
+    tags: [quadruped, darpa, military, hydraulic]
+    parents:
+      - name: "Boston Dynamics Founded at MIT"
+        relation: extends
+    description: "DARPA-funded rough-terrain quadruped robot capable of carrying 340 lbs over uneven ground using hydraulic actuation"
+
+  - name: "LS3 (Legged Squad Support System)"
+    year: 2012
+    tags: [quadruped, darpa, military, logistics]
+    parents:
+      - name: "BigDog DARPA Quadruped"
+        relation: extends
+    description: "Larger successor to BigDog designed to carry 400 lbs of gear for military squads over 20-mile missions"
+
+  - name: "Google Acquires Boston Dynamics"
+    year: 2013
+    tags: [acquisition, google, corporate]
+    parents:
+      - name: "BigDog DARPA Quadruped"
+        relation: extends
+    description: "Google acquired Boston Dynamics as part of a robotics buying spree led by Andy Rubin's Google X division"
+
+  - name: "Atlas Humanoid Robot"
+    year: 2013
+    tags: [humanoid, hydraulic, darpa, bipedal]
+    parents:
+      - name: "BigDog DARPA Quadruped"
+        relation: extends
+    description: "DARPA-funded hydraulic humanoid robot designed for disaster response with dynamic balance and manipulation"
+
+  - name: "SpotMini Reveal"
+    year: 2016
+    tags: [quadruped, electric, prototype, consumer]
+    parents:
+      - name: "BigDog DARPA Quadruped"
+        relation: extends
+    description: "All-electric compact quadruped with manipulation arm, marking shift from hydraulic military to electric commercial platforms"
+
+  - name: "SoftBank Acquires Boston Dynamics"
+    year: 2017
+    tags: [acquisition, softbank, corporate]
+    parents:
+      - name: "Google Acquires Boston Dynamics"
+        relation: extends
+    description: "SoftBank Group acquired Boston Dynamics from Alphabet, signaling a push toward commercial robotics products"
+
+  - name: "Atlas Parkour and Gymnastics Demos"
+    year: 2019
+    tags: [humanoid, hydraulic, agility, demo]
+    parents:
+      - name: "Atlas Humanoid Robot"
+        relation: extends
+    description: "Atlas demonstrated parkour, backflips, and gymnastics routines showcasing state-of-the-art dynamic humanoid locomotion"
+
+  - name: "Spot Commercial Launch"
+    year: 2020
+    tags: [quadruped, commercial, inspection, enterprise]
+    parents:
+      - name: "SpotMini Reveal"
+        relation: extends
+    description: "Spot became commercially available for industrial inspection, construction monitoring, and public safety applications"
+
+  - name: "Hyundai Acquires Boston Dynamics"
+    year: 2021
+    tags: [acquisition, hyundai, corporate]
+    parents:
+      - name: "SoftBank Acquires Boston Dynamics"
+        relation: extends
+    description: "Hyundai Motor Group acquired 80% controlling stake in Boston Dynamics for $1.1B, integrating robotics into its mobility vision"
+
+  - name: "Stretch Warehouse Robot"
+    year: 2022
+    tags: [logistics, warehouse, manipulation, commercial]
+    parents:
+      - name: "Spot Commercial Launch"
+        relation: extends
+    description: "Mobile robot designed for warehouse box-moving with a large perception mast and vacuum gripper for trailer unloading"
+
+  - name: "Electric Atlas Humanoid"
+    year: 2024
+    tags: [humanoid, electric, next-gen, commercial]
+    parents:
+      - name: "Atlas Humanoid Robot"
+        relation: replaces
+      - name: "Hyundai Acquires Boston Dynamics"
+        relation: extends
+    description: "Fully electric next-generation Atlas replacing the hydraulic version, designed for commercial deployment in Hyundai factories"
+
+  - name: "Spot with GPT-4 Integration"
+    year: 2024
+    tags: [quadruped, llm, natural-language, ai]
+    parents:
+      - name: "Spot Commercial Launch"
+        relation: extends
+    description: "Spot integrated with OpenAI GPT-4 for natural language interaction, enabling voice-guided site tours and inspections"
+
+  - name: "Hyundai Factory Deployment Pilot"
+    year: 2024
+    tags: [deployment, hyundai, manufacturing, enterprise]
+    parents:
+      - name: "Electric Atlas Humanoid"
+        relation: extends
+      - name: "Stretch Warehouse Robot"
+        relation: extends
+    description: "Boston Dynamics began piloting Atlas and Stretch robots in Hyundai and Kia manufacturing facilities"

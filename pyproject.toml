@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "company-technology-genealogy"
+version = "0.1.0"
+description = "Interactive genealogy of robotics & AI companies and their technology evolution"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "rsasaki0109" },
+]
+keywords = ["robotics", "autonomous-driving", "ai-companies", "genealogy", "visualization"]
+dependencies = [
+    "pyyaml>=6.0",
+]
+
+[project.urls]
+Homepage = "https://rsasaki0109.github.io/company-technology-genealogy/"
+Repository = "https://github.com/rsasaki0109/company-technology-genealogy"
+Demo = "https://rsasaki0109.github.io/company-technology-genealogy/"

@@ -1,0 +1,130 @@
+name: LiDAR Companies
+description: >
+  The LiDAR industry evolved from Velodyne's pioneering spinning sensors for
+  autonomous vehicles into a competitive landscape of solid-state, MEMS, and
+  FMCW technologies. Velodyne dominated early AV development but merged with
+  Ouster in 2023. Chinese players Hesai, RoboSense, and Livox emerged with
+  cost-effective alternatives. Luminar, Innoviz, and Aeva pursued automotive
+  OEM partnerships with next-generation architectures.
+source_awesome_lists: []
+
+methods:
+  - name: "Velodyne HDL-64E"
+    year: 2007
+    tags: [velodyne, spinning-lidar, 64-channel, autonomous-driving]
+    parents: []
+    description: "First high-resolution 3D LiDAR for autonomous vehicles, used extensively in DARPA Urban Challenge"
+
+  - name: "Velodyne VLP-16 Puck"
+    year: 2014
+    tags: [velodyne, spinning-lidar, 16-channel, cost-reduction]
+    parents:
+      - name: "Velodyne HDL-64E"
+        relation: extends
+    description: "Compact 16-channel LiDAR that democratized 3D sensing with a lower price point for robotics and mapping"
+
+  - name: "RoboSense RS-LiDAR"
+    year: 2014
+    tags: [robosense, mechanical-lidar, china]
+    parents: []
+    description: "RoboSense entered the LiDAR market with mechanical spinning sensors targeting autonomous driving in China"
+
+  - name: "Hesai Pandar series"
+    year: 2017
+    tags: [hesai, mechanical-lidar, 40-channel, china]
+    parents: []
+    description: "Hesai launched Pandar40 mechanical LiDAR, gaining traction with Chinese autonomous driving companies"
+
+  - name: "Aeva FMCW LiDAR founded"
+    year: 2017
+    tags: [aeva, fmcw, frequency-modulated, startup]
+    parents: []
+    description: "Aeva founded to develop frequency-modulated continuous-wave LiDAR that measures velocity natively"
+
+  - name: "Continental + AEye partnership"
+    year: 2019
+    tags: [continental, aeye, automotive-oem, partnership]
+    parents: []
+    description: "Continental partnered with AEye to integrate adaptive MEMS-based LiDAR into automotive production programs"
+
+  - name: "Livox LiDAR launch"
+    year: 2019
+    tags: [livox, dji, non-repetitive-scanning, low-cost]
+    parents: []
+    description: "DJI subsidiary Livox launched non-repetitive scanning LiDAR at drastically lower price points"
+
+  - name: "Luminar Iris"
+    year: 2022
+    tags: [luminar, 1550nm, automotive-grade, solid-state]
+    parents: []
+    description: "Luminar's automotive-grade LiDAR sensor designed for series production integration into passenger vehicles"
+
+  - name: "Luminar OEM partnerships"
+    year: 2022
+    tags: [luminar, volvo, mercedes, polestar, partnership]
+    parents:
+      - name: "Luminar Iris"
+        relation: extends
+    description: "Luminar secured production partnerships with Volvo, Mercedes-Benz, and Polestar for highway autonomy"
+
+  - name: "Hesai AT128"
+    year: 2022
+    tags: [hesai, hybrid-solid-state, 128-channel, adas]
+    parents:
+      - name: "Hesai Pandar series"
+        relation: extends
+    description: "Hesai's hybrid solid-state 128-channel LiDAR designed for mass-production ADAS and robotaxi applications"
+
+  - name: "Livox HAP / Mid-360"
+    year: 2022
+    tags: [livox, dji, hap, mid-360, automotive]
+    parents:
+      - name: "Livox LiDAR launch"
+        relation: extends
+    description: "Livox released HAP for automotive ADAS and Mid-360 compact sensor for robotics and mapping"
+
+  - name: "RoboSense M1"
+    year: 2022
+    tags: [robosense, mems, solid-state, automotive]
+    parents:
+      - name: "RoboSense RS-LiDAR"
+        relation: extends
+    description: "RoboSense's MEMS-based solid-state LiDAR for automotive mass production, adopted by multiple Chinese OEMs"
+
+  - name: "Innoviz InnovizTwo"
+    year: 2022
+    tags: [innoviz, mems, solid-state, automotive-grade]
+    parents: []
+    description: "Innoviz's second-generation automotive-grade MEMS LiDAR with improved range and resolution for BMW integration"
+
+  - name: "Velodyne + Ouster merger"
+    year: 2023
+    tags: [ouster, velodyne, merger, consolidation]
+    parents:
+      - name: "Velodyne VLP-16 Puck"
+        relation: extends
+    description: "Velodyne and Ouster merged under the Ouster name, consolidating two major LiDAR pioneers"
+
+  - name: "Ouster OS series REV7"
+    year: 2023
+    tags: [ouster, digital-lidar, rev7, multi-beam]
+    parents:
+      - name: "Velodyne + Ouster merger"
+        relation: extends
+    description: "Ouster released REV7 hardware revision of OS sensors with improved range, precision, and reliability"
+
+  - name: "Hesai IPO Nasdaq"
+    year: 2023
+    tags: [hesai, ipo, nasdaq, china]
+    parents:
+      - name: "Hesai AT128"
+        relation: extends
+    description: "Hesai went public on Nasdaq, becoming the first pure-play LiDAR company from China to list in the US"
+
+  - name: "Ouster digital lidar + software platform"
+    year: 2024
+    tags: [ouster, software, perception, digital-lidar]
+    parents:
+      - name: "Ouster OS series REV7"
+        relation: extends
+    description: "Ouster expanded into software-defined LiDAR solutions with perception analytics for smart infrastructure"

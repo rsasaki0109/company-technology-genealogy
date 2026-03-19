@@ -1,0 +1,106 @@
+name: NVIDIA DRIVE & Infra
+description: >
+  NVIDIA has built a comprehensive autonomous driving ecosystem spanning edge compute
+  (DRIVE platform), simulation (DRIVE Sim, Isaac Sim), and cloud training infrastructure
+  (DGX Cloud). The DRIVE platform evolved from PX through Xavier and Orin to the
+  upcoming Thor SoC. NVIDIA also expanded into robotics simulation and world models,
+  serving as a critical technology supplier to most major autonomous driving programs
+  worldwide.
+source_awesome_lists: []
+
+methods:
+  - name: "NVIDIA DRIVE PX"
+    year: 2015
+    tags: [hardware, platform, drive-px, compute]
+    parents: []
+    description: "First NVIDIA autonomous driving compute platform using dual Tegra X1 processors for ADAS development"
+
+  - name: "DRIVE PX 2"
+    year: 2016
+    tags: [hardware, platform, drive-px2, compute]
+    parents:
+      - name: "NVIDIA DRIVE PX"
+        relation: extends
+    description: "Second-generation DRIVE platform with dual Pascal GPUs delivering 24 TOPS for L3+ autonomous driving"
+
+  - name: "DRIVE Xavier"
+    year: 2018
+    tags: [hardware, soc, xavier, adas]
+    parents:
+      - name: "DRIVE PX 2"
+        relation: replaces
+    description: "First NVIDIA autonomous driving SoC delivering 30 TOPS at 30W for production ADAS and L2+ systems"
+
+  - name: "DRIVE Sim (Omniverse-Based)"
+    year: 2019
+    tags: [simulation, omniverse, drive-sim, testing]
+    parents:
+      - name: "DRIVE Xavier"
+        relation: extends
+    description: "Physically accurate autonomous driving simulation platform built on NVIDIA Omniverse for virtual testing"
+
+  - name: "Isaac Sim for Robotics"
+    year: 2021
+    tags: [simulation, robotics, isaac-sim]
+    parents:
+      - name: "DRIVE Sim (Omniverse-Based)"
+        relation: extends
+    description: "Omniverse-based robotics simulation platform for developing and testing manipulation and navigation"
+
+  - name: "DRIVE Orin"
+    year: 2022
+    tags: [hardware, soc, orin, high-performance]
+    parents:
+      - name: "DRIVE Xavier"
+        relation: replaces
+    description: "High-performance autonomous driving SoC delivering 254 TOPS, widely adopted by OEMs and AD companies"
+
+  - name: "DRIVE Hyperion Platform"
+    year: 2022
+    tags: [platform, hyperion, reference-design, sensors]
+    parents:
+      - name: "DRIVE Orin"
+        relation: extends
+    description: "Complete reference architecture combining DRIVE Orin compute with sensors and software for L2+ to L4 development"
+
+  - name: "DGX Cloud / GPU Clusters for AD Training"
+    year: 2023
+    tags: [infrastructure, cloud, dgx, training, gpu]
+    parents:
+      - name: "DRIVE Orin"
+        relation: extends
+    description: "Cloud-accessible GPU supercomputing clusters enabling autonomous driving companies to train large-scale AI models"
+
+  - name: "Partnerships: Mercedes, JLR, BYD, Hyundai"
+    year: 2023
+    tags: [partnership, oem, mercedes, jaguar, byd, hyundai]
+    parents:
+      - name: "DRIVE Orin"
+        relation: extends
+    description: "Major OEM partnerships for DRIVE Orin integration in production vehicles from Mercedes-Benz, JLR, BYD, and Hyundai"
+
+  - name: "Isaac Lab"
+    year: 2024
+    tags: [simulation, robotics, isaac-lab, reinforcement-learning]
+    parents:
+      - name: "Isaac Sim for Robotics"
+        relation: extends
+    description: "GPU-accelerated robot learning framework built on Isaac Sim for reinforcement and imitation learning at scale"
+
+  - name: "DRIVE Thor"
+    year: 2025
+    tags: [hardware, soc, thor, next-gen]
+    parents:
+      - name: "DRIVE Orin"
+        relation: replaces
+    description: "Next-generation centralized car computer delivering 2000 TOPS, unifying autonomous driving and in-cabin AI"
+
+  - name: "Cosmos World Model"
+    year: 2025
+    tags: [ai, world-model, cosmos, simulation]
+    parents:
+      - name: "DRIVE Sim (Omniverse-Based)"
+        relation: extends
+      - name: "DGX Cloud / GPU Clusters for AD Training"
+        relation: extends
+    description: "Generative world model for physical AI, enabling realistic scenario generation for autonomous driving training"

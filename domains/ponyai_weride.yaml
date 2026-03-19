@@ -1,0 +1,105 @@
+name: Pony.ai & WeRide
+description: >
+  Pony.ai and WeRide are leading Chinese autonomous driving companies, both
+  founded in 2016-2017 by veterans of U.S. tech companies. Pony.ai was founded
+  by James Peng (ex-Baidu chief architect) and Lou Tiancheng, operating robotaxis
+  and autonomous trucks in China and the U.S. WeRide was founded by Tony Han
+  (ex-Baidu) and has diversified into robobuses, robosweepers, and robotaxis. Both
+  companies completed Nasdaq IPOs in late 2024, becoming the first Chinese AV
+  firms listed on U.S. exchanges.
+source_awesome_lists: []
+
+methods:
+  - name: "Pony.ai Founded"
+    year: 2016
+    tags: [founding, startup, china, ex-baidu]
+    parents: []
+    description: "James Peng (ex-Baidu chief architect) and Lou Tiancheng co-founded Pony.ai in Fremont and Guangzhou"
+
+  - name: "WeRide Founded"
+    year: 2017
+    tags: [founding, startup, china, guangzhou]
+    parents: []
+    description: "Tony Han (ex-Baidu autonomous driving unit) founded WeRide (originally Jingchi) in Guangzhou"
+
+  - name: "Pony.ai Guangzhou Robotaxi"
+    year: 2018
+    tags: [robotaxi, guangzhou, pilot, china]
+    parents:
+      - name: "Pony.ai Founded"
+        relation: extends
+    description: "Pony.ai launched one of China's first robotaxi pilot programs in Guangzhou's Nansha district"
+
+  - name: "WeRide Guangzhou Operations"
+    year: 2019
+    tags: [robotaxi, guangzhou, operations, china]
+    parents:
+      - name: "WeRide Founded"
+        relation: extends
+    description: "WeRide launched robotaxi service in Guangzhou's Huangpu district covering 144 sq km with Nissan LEAF EVs"
+
+  - name: "Pony.ai Toyota Partnership"
+    year: 2020
+    tags: [partnership, toyota, investment]
+    parents:
+      - name: "Pony.ai Guangzhou Robotaxi"
+        relation: extends
+    description: "Toyota invested $400M in Pony.ai to jointly develop autonomous mobility services using Lexus RX platforms"
+
+  - name: "WeRide Robobus and Robosweeper Diversification"
+    year: 2021
+    tags: [diversification, robobus, robosweeper, multi-form]
+    parents:
+      - name: "WeRide Guangzhou Operations"
+        relation: extends
+    description: "WeRide expanded beyond robotaxis to autonomous minibuses, street sweepers, and cargo vans for varied urban use"
+
+  - name: "Pony.ai Trucking Division"
+    year: 2021
+    tags: [trucking, logistics, freight, china]
+    parents:
+      - name: "Pony.ai Founded"
+        relation: extends
+    description: "Pony.ai launched autonomous trucking operations for freight logistics between Chinese manufacturing hubs"
+
+  - name: "Pony.ai Beijing Driverless Permit"
+    year: 2022
+    tags: [regulatory, beijing, driverless, permit]
+    parents:
+      - name: "Pony.ai Guangzhou Robotaxi"
+        relation: extends
+    description: "Pony.ai received permit for fully driverless robotaxi testing in Beijing's designated zones"
+
+  - name: "WeRide IPO Nasdaq"
+    year: 2024
+    tags: [ipo, nasdaq, public-market]
+    parents:
+      - name: "WeRide Robobus and Robosweeper Diversification"
+        relation: extends
+    description: "WeRide completed Nasdaq IPO, becoming one of the first Chinese autonomous driving firms listed in the U.S."
+
+  - name: "WeRide Abu Dhabi Expansion"
+    year: 2024
+    tags: [international, abu-dhabi, uae, expansion]
+    parents:
+      - name: "WeRide Guangzhou Operations"
+        relation: extends
+    description: "WeRide expanded to Abu Dhabi with robotaxi and robobus services, its first major international market"
+
+  - name: "Pony.ai IPO Nasdaq"
+    year: 2024
+    tags: [ipo, nasdaq, public-market]
+    parents:
+      - name: "Pony.ai Trucking Division"
+        relation: extends
+      - name: "Pony.ai Beijing Driverless Permit"
+        relation: extends
+    description: "Pony.ai completed Nasdaq IPO at ~$4.5B valuation, raising capital for commercial scaling across China"
+
+  - name: "Pony.ai Beijing and Shanghai Expansion"
+    year: 2025
+    tags: [expansion, beijing, shanghai, commercial, china]
+    parents:
+      - name: "Pony.ai IPO Nasdaq"
+        relation: extends
+    description: "Pony.ai expanded paid robotaxi services to broader Beijing and Shanghai zones following regulatory approvals"

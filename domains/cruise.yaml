@@ -1,0 +1,102 @@
+name: Cruise
+description: >
+  Cruise Automation was founded in 2013 by Kyle Vogt and Dan Kan as a startup
+  building aftermarket self-driving kits. General Motors acquired Cruise in 2016
+  for over $1B, making it GM's autonomous vehicle division. Cruise operated
+  driverless robotaxis in San Francisco until a pedestrian-dragging incident in
+  October 2023 led to a nationwide operational pause, executive resignations, and
+  a major restructuring under GM oversight.
+source_awesome_lists: []
+
+methods:
+  - name: "Cruise Automation Founded"
+    year: 2013
+    tags: [founding, startup, aftermarket]
+    parents: []
+    description: "Kyle Vogt and Dan Kan founded Cruise Automation in San Francisco to build aftermarket self-driving kits"
+
+  - name: "GM Acquisition of Cruise"
+    year: 2016
+    tags: [acquisition, gm, corporate]
+    parents:
+      - name: "Cruise Automation Founded"
+        relation: extends
+    description: "General Motors acquired Cruise Automation for over $1 billion, integrating it as GM's AV division"
+
+  - name: "Cruise Perception Stack"
+    year: 2018
+    tags: [perception, deep-learning, sensor-fusion]
+    parents:
+      - name: "GM Acquisition of Cruise"
+        relation: extends
+    description: "In-house perception system combining camera, LiDAR, and radar for dense urban driving in San Francisco"
+
+  - name: "Cruise HD Mapping Platform"
+    year: 2019
+    tags: [hd-maps, localization, infrastructure]
+    parents:
+      - name: "Cruise Perception Stack"
+        relation: extends
+    description: "High-definition mapping infrastructure for centimeter-level localization in complex urban environments"
+
+  - name: "Cruise Origin (Purpose-Built Robotaxi)"
+    year: 2020
+    tags: [hardware, robotaxi, purpose-built, no-steering-wheel]
+    parents:
+      - name: "GM Acquisition of Cruise"
+        relation: extends
+      - name: "Cruise Perception Stack"
+        relation: extends
+    description: "Purpose-built autonomous shuttle with no steering wheel or pedals, designed jointly with GM and Honda"
+
+  - name: "SF Driverless Permit"
+    year: 2022
+    tags: [regulatory, driverless, san-francisco, cpuc]
+    parents:
+      - name: "Cruise Perception Stack"
+        relation: extends
+      - name: "Cruise HD Mapping Platform"
+        relation: extends
+    description: "California PUC granted Cruise a permit to charge fares for fully driverless rides in San Francisco"
+
+  - name: "October 2023 Incident and Operational Pause"
+    year: 2023
+    tags: [safety, incident, regulatory, suspension]
+    parents:
+      - name: "SF Driverless Permit"
+        relation: replaces
+    description: "Pedestrian dragged by Cruise vehicle after being struck by another car; California DMV suspended driverless permit"
+
+  - name: "Kyle Vogt Resignation"
+    year: 2023
+    tags: [people, leadership, resignation]
+    parents:
+      - name: "October 2023 Incident and Operational Pause"
+        relation: extends
+    description: "CEO and co-founder Kyle Vogt resigned following the incident, along with co-founder Dan Kan and other executives"
+
+  - name: "GM Scaling Back and Restructuring"
+    year: 2024
+    tags: [corporate, restructuring, cost-cutting, gm]
+    parents:
+      - name: "Kyle Vogt Resignation"
+        relation: extends
+      - name: "Cruise Origin (Purpose-Built Robotaxi)"
+        relation: replaces
+    description: "GM abandoned Origin production, wrote down $1.5B in Cruise investments, and cut workforce significantly"
+
+  - name: "Cruise Re-launch with Safety Drivers"
+    year: 2024
+    tags: [operations, safety-driver, phoenix, houston]
+    parents:
+      - name: "GM Scaling Back and Restructuring"
+        relation: extends
+    description: "Cruise resumed limited testing with human safety drivers in Phoenix and Houston under new leadership"
+
+  - name: "Cruise Absorbed into GM Technical"
+    year: 2024
+    tags: [corporate, gm, integration]
+    parents:
+      - name: "GM Scaling Back and Restructuring"
+        relation: extends
+    description: "GM folded Cruise operations into its internal technical organization, ending Cruise as a standalone unit"

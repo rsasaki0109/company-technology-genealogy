@@ -1,0 +1,114 @@
+name: Tier IV / Autoware
+description: >
+  Autoware originated as an open-source autonomous driving project at Nagoya University
+  in 2015, led by Shinpei Kato. Tier IV was founded the same year to commercialize
+  the technology. Autoware evolved through multiple iterations from ROS 1 to ROS 2,
+  and is now governed by the Autoware Foundation. Tier IV provides commercial deployment
+  through its Web.Auto cloud platform and Pilot.Auto service, contributing to Japan's
+  autonomous driving ecosystem.
+source_awesome_lists: []
+
+methods:
+  - name: "Nagoya University Autoware Project"
+    year: 2015
+    tags: [research, university, open-source, autonomous-driving]
+    parents: []
+    description: "Shinpei Kato's research group at Nagoya University developed the original Autoware open-source autonomous driving stack"
+
+  - name: "Tier IV Founded by Shinpei Kato"
+    year: 2015
+    tags: [founding, japan, tier-iv, shinpei-kato]
+    parents:
+      - name: "Nagoya University Autoware Project"
+        relation: extends
+    description: "Shinpei Kato founded Tier IV to commercialize and support the Autoware open-source platform"
+
+  - name: "Autoware.AI (ROS 1)"
+    year: 2017
+    tags: [software, ros1, autoware-ai, open-source]
+    parents:
+      - name: "Nagoya University Autoware Project"
+        relation: extends
+    description: "First formal release of Autoware based on ROS 1, providing a full autonomous driving software stack"
+
+  - name: "Autoware Foundation Established"
+    year: 2018
+    tags: [organization, foundation, governance, open-source]
+    parents:
+      - name: "Autoware.AI (ROS 1)"
+        relation: extends
+    description: "Non-profit Autoware Foundation established to govern the open-source project with industry and academic members"
+
+  - name: "Autoware.Auto (ROS 2 Rewrite)"
+    year: 2019
+    tags: [software, ros2, autoware-auto, rewrite]
+    parents:
+      - name: "Autoware.AI (ROS 1)"
+        relation: replaces
+    description: "Complete rewrite of Autoware on ROS 2 with improved code quality, testing, and real-time capabilities"
+
+  - name: "Web.Auto Cloud DevOps Platform"
+    year: 2020
+    tags: [cloud, devops, web-auto, platform]
+    parents:
+      - name: "Tier IV Founded by Shinpei Kato"
+        relation: extends
+    description: "Tier IV launched Web.Auto, a cloud-based DevOps platform for managing and monitoring autonomous driving fleets"
+
+  - name: "Tier IV Series A-C Funding Rounds"
+    year: 2021
+    tags: [corporate, funding, investment]
+    parents:
+      - name: "Web.Auto Cloud DevOps Platform"
+        relation: extends
+    description: "Tier IV raised multiple funding rounds from investors including SOMPO, Yamaha Motor, and Aioi Nissay Dowa Insurance"
+
+  - name: "Autoware Universe (Community-Driven)"
+    year: 2022
+    tags: [software, ros2, autoware-universe, community]
+    parents:
+      - name: "Autoware.Auto (ROS 2 Rewrite)"
+        relation: extends
+    description: "Community-driven Autoware repository accepting broader contributions with less strict code review requirements"
+
+  - name: "Autoware Core (Tier IV Maintained)"
+    year: 2022
+    tags: [software, ros2, autoware-core, tier-iv]
+    parents:
+      - name: "Autoware.Auto (ROS 2 Rewrite)"
+        relation: extends
+    description: "Tier IV-maintained core modules with strict quality standards for commercial deployment reliability"
+
+  - name: "Partnership with NVIDIA and AWS"
+    year: 2022
+    tags: [partnership, nvidia, aws, cloud, compute]
+    parents:
+      - name: "Web.Auto Cloud DevOps Platform"
+        relation: extends
+    description: "Tier IV partnered with NVIDIA for DRIVE platform integration and AWS for scalable cloud infrastructure"
+
+  - name: "Japan Government Autonomous Driving Projects"
+    year: 2023
+    tags: [government, japan, regulation, public-road]
+    parents:
+      - name: "Autoware Universe (Community-Driven)"
+        relation: extends
+    description: "Tier IV participated in Japanese government-backed autonomous driving projects on public roads across multiple cities"
+
+  - name: "Tier IV Autonomous Taxi Demonstration"
+    year: 2024
+    tags: [robotaxi, demonstration, japan, public]
+    parents:
+      - name: "Japan Government Autonomous Driving Projects"
+        relation: extends
+    description: "Tier IV conducted autonomous taxi demonstration experiments on public roads in Japan using Autoware-based vehicles"
+
+  - name: "Pilot.Auto Commercial Deployment"
+    year: 2024
+    tags: [product, pilot-auto, commercial, deployment]
+    parents:
+      - name: "Tier IV Autonomous Taxi Demonstration"
+        relation: extends
+      - name: "Web.Auto Cloud DevOps Platform"
+        relation: extends
+    description: "Tier IV's Pilot.Auto service reached commercial deployment stage for autonomous mobility services"

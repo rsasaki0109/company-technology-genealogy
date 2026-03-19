@@ -1,0 +1,97 @@
+name: Figure AI & Humanoid Startups
+description: >
+  Figure AI, founded in 2022 by Brett Adcock, rapidly became one of the most
+  high-profile humanoid robotics startups, securing partnerships with OpenAI and
+  BMW. The broader humanoid robotics wave includes 1X Technologies (formerly
+  Halodi), Sanctuary AI, Apptronik, and Tesla's Optimus program, all competing
+  to build general-purpose humanoid robots for industrial and consumer markets.
+source_awesome_lists: []
+
+methods:
+  - name: "Figure AI Founded"
+    year: 2022
+    tags: [founding, humanoid, startup]
+    parents: []
+    description: "Brett Adcock founded Figure AI in Sunnyvale to build general-purpose humanoid robots for labor markets"
+
+  - name: "Tesla Optimus Reveal"
+    year: 2022
+    tags: [humanoid, tesla, prototype, manufacturing]
+    parents: []
+    description: "Elon Musk unveiled the Tesla Bot (Optimus) prototype at AI Day, targeting Tesla factory automation"
+
+  - name: "Figure 01 Reveal"
+    year: 2023
+    tags: [humanoid, prototype, demo, manipulation]
+    parents:
+      - name: "Figure AI Founded"
+        relation: extends
+    description: "Figure revealed its first humanoid robot capable of autonomous walking and basic manipulation tasks"
+
+  - name: "1X Technologies NEO Humanoid"
+    year: 2023
+    tags: [humanoid, 1x, norway, consumer]
+    parents: []
+    description: "Norwegian startup 1X Technologies (formerly Halodi) unveiled NEO bipedal humanoid targeting home and industrial use"
+
+  - name: "Sanctuary AI Phoenix Humanoid"
+    year: 2023
+    tags: [humanoid, sanctuary, dexterous, ai]
+    parents: []
+    description: "Sanctuary AI demonstrated Phoenix general-purpose humanoid with Carbon AI control system for dexterous manipulation"
+
+  - name: "Tesla Optimus Gen 2"
+    year: 2023
+    tags: [humanoid, tesla, improved, dexterity]
+    parents:
+      - name: "Tesla Optimus Reveal"
+        relation: extends
+    description: "Significantly improved Optimus with faster walking, lighter weight, and tactile finger sensing capabilities"
+
+  - name: "Figure AI + OpenAI Partnership"
+    year: 2024
+    tags: [partnership, openai, llm, multimodal]
+    parents:
+      - name: "Figure 01 Reveal"
+        relation: extends
+    description: "Figure partnered with OpenAI to integrate vision-language models for natural language robot interaction and reasoning"
+
+  - name: "Figure 02"
+    year: 2024
+    tags: [humanoid, next-gen, commercial, manipulation]
+    parents:
+      - name: "Figure 01 Reveal"
+        relation: extends
+      - name: "Figure AI + OpenAI Partnership"
+        relation: extends
+    description: "Second-generation humanoid with improved hands, onboard AI, and faster manipulation for commercial deployment"
+
+  - name: "Figure at BMW Factory"
+    year: 2024
+    tags: [deployment, bmw, manufacturing, pilot]
+    parents:
+      - name: "Figure 02"
+        relation: extends
+    description: "Figure began deploying humanoid robots at BMW's Spartanburg plant for automotive manufacturing tasks"
+
+  - name: "Apptronik Apollo Humanoid"
+    year: 2024
+    tags: [humanoid, apptronik, industrial, logistics]
+    parents: []
+    description: "Austin-based Apptronik launched Apollo humanoid for logistics and manufacturing with modular battery-swapping design"
+
+  - name: "1X NEO Beta"
+    year: 2024
+    tags: [humanoid, 1x, consumer, home]
+    parents:
+      - name: "1X Technologies NEO Humanoid"
+        relation: extends
+    description: "1X began limited beta deployment of NEO humanoid for household tasks and consumer robotics applications"
+
+  - name: "Tesla Optimus Factory Testing"
+    year: 2025
+    tags: [humanoid, tesla, factory, deployment]
+    parents:
+      - name: "Tesla Optimus Gen 2"
+        relation: extends
+    description: "Tesla deployed Optimus robots in its own factories for real-world testing of battery cell handling and sorting tasks"

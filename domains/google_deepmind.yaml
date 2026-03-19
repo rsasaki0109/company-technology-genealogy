@@ -1,0 +1,136 @@
+name: Google DeepMind
+description: >
+  DeepMind was founded in London in 2010 by Demis Hassabis, Shane Legg, and
+  Mustafa Suleyman, and acquired by Google in 2014. It achieved landmark results
+  with AlphaGo and AlphaFold, transforming game-playing AI and structural
+  biology. In 2023, Google merged its Brain team with DeepMind to form Google
+  DeepMind under Demis Hassabis, unifying frontier AI research and producing the
+  Gemini model family.
+source_awesome_lists: []
+
+methods:
+  - name: "DeepMind Founded"
+    year: 2010
+    tags: [founding, research, london, agi]
+    parents: []
+    description: "Demis Hassabis, Shane Legg, and Mustafa Suleyman founded DeepMind in London to solve intelligence and advance science"
+
+  - name: "Google Acquires DeepMind"
+    year: 2014
+    tags: [acquisition, google, corporate]
+    parents:
+      - name: "DeepMind Founded"
+        relation: extends
+    description: "Google acquired DeepMind for approximately $500M, bringing deep reinforcement learning expertise into Alphabet"
+
+  - name: "AlphaGo Defeats Lee Sedol"
+    year: 2016
+    tags: [game-ai, go, reinforcement-learning, milestone]
+    parents:
+      - name: "Google Acquires DeepMind"
+        relation: extends
+    description: "AlphaGo defeated world Go champion Lee Sedol 4-1, a landmark achievement in AI surpassing human performance in Go"
+
+  - name: "AlphaFold 1"
+    year: 2018
+    tags: [protein-folding, biology, science, deep-learning]
+    parents:
+      - name: "Google Acquires DeepMind"
+        relation: extends
+    description: "First version of AlphaFold won CASP13 protein structure prediction competition, demonstrating AI for structural biology"
+
+  - name: "AlphaFold 2"
+    year: 2020
+    tags: [protein-folding, biology, breakthrough, science]
+    parents:
+      - name: "AlphaFold 1"
+        relation: extends
+    description: "AlphaFold 2 solved the protein folding problem at atomic accuracy, winning CASP14 and revolutionizing structural biology"
+
+  - name: "AlphaFold Protein Structure Database"
+    year: 2021
+    tags: [open-science, protein-folding, database, biology]
+    parents:
+      - name: "AlphaFold 2"
+        relation: extends
+    description: "DeepMind released predicted structures for 200M+ proteins freely, transforming drug discovery and biological research"
+
+  - name: "Google Brain + DeepMind Merger"
+    year: 2023
+    tags: [corporate, merger, google, restructuring]
+    parents:
+      - name: "Google Acquires DeepMind"
+        relation: extends
+    description: "Google merged its Brain team with DeepMind into Google DeepMind under Demis Hassabis to unify AI research"
+
+  - name: "RT-1 and RT-2 Robotics Transformers"
+    year: 2023
+    tags: [robotics, transformer, manipulation, foundation-model]
+    parents:
+      - name: "Google Brain + DeepMind Merger"
+        relation: extends
+    description: "Robotics Transformer models enabling language-conditioned robotic manipulation via large-scale vision-language-action training"
+
+  - name: "Gemini 1.0"
+    year: 2023
+    tags: [language-model, multimodal, frontier, google]
+    parents:
+      - name: "Google Brain + DeepMind Merger"
+        relation: extends
+    description: "Google DeepMind's first natively multimodal model family (Ultra, Pro, Nano) challenging GPT-4 across benchmarks"
+
+  - name: "AlphaFold 3"
+    year: 2024
+    tags: [protein-folding, drug-discovery, molecular, biology]
+    parents:
+      - name: "AlphaFold 2"
+        relation: extends
+    description: "Extended beyond proteins to predict structures of complexes with DNA, RNA, ligands, and other biomolecules"
+
+  - name: "Gemini 1.5 Pro"
+    year: 2024
+    tags: [language-model, long-context, multimodal, million-token]
+    parents:
+      - name: "Gemini 1.0"
+        relation: extends
+    description: "Long-context model processing up to 1M tokens with strong performance across text, code, audio, and video"
+
+  - name: "Genie (Generative Interactive Environment)"
+    year: 2024
+    tags: [world-model, generative, interactive, research]
+    parents:
+      - name: "Google Brain + DeepMind Merger"
+        relation: extends
+    description: "Foundation world model generating playable 2D environments from a single image, enabling interactive simulations"
+
+  - name: "Veo Video Generation"
+    year: 2024
+    tags: [video-generation, generative, multimodal]
+    parents:
+      - name: "Gemini 1.5 Pro"
+        relation: extends
+    description: "High-quality text-to-video generation model producing 1080p videos with strong coherence and cinematic quality"
+
+  - name: "Gemini 2.0"
+    year: 2024
+    tags: [language-model, multimodal, agentic, frontier]
+    parents:
+      - name: "Gemini 1.5 Pro"
+        relation: extends
+    description: "Next-generation multimodal model with native tool use, agentic capabilities, and improved reasoning"
+
+  - name: "Demis Hassabis Nobel Prize in Chemistry"
+    year: 2024
+    tags: [people, award, nobel, alphafold]
+    parents:
+      - name: "AlphaFold 3"
+        relation: extends
+    description: "Demis Hassabis and John Jumper awarded Nobel Prize in Chemistry for AlphaFold's protein structure prediction"
+
+  - name: "Gemini 2.5 Pro"
+    year: 2025
+    tags: [language-model, reasoning, thinking, frontier]
+    parents:
+      - name: "Gemini 2.0"
+        relation: extends
+    description: "Thinking model with extended reasoning capabilities and top-tier performance on coding and math benchmarks"

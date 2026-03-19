@@ -1,0 +1,91 @@
+name: Physical Intelligence & Covariant
+description: >
+  Physical Intelligence (pi) was founded in 2024 by a team of leading robotics
+  researchers including Karol Hausman, Sergey Levine, and Chelsea Finn, aiming
+  to build foundation models for robotic manipulation. Covariant, founded in 2017
+  by Pieter Abbeel, pioneered AI-powered warehouse picking and developed one of
+  the first robotics foundation models (RFM-1). The space also includes Skild AI
+  (CMU spin-off) and Collaborative Robotics, all pursuing general-purpose robot
+  intelligence through large-scale learning.
+source_awesome_lists: []
+
+methods:
+  - name: "Covariant Founded"
+    year: 2017
+    tags: [founding, warehouse, manipulation, pieter-abbeel]
+    parents: []
+    description: "Pieter Abbeel co-founded Covariant (originally Embodied Intelligence) to apply deep RL to warehouse robotic picking"
+
+  - name: "Covariant Brain for Warehouse Picking"
+    year: 2020
+    tags: [deployment, warehouse, picking, reinforcement-learning]
+    parents:
+      - name: "Covariant Founded"
+        relation: extends
+    description: "Covariant Brain AI system deployed in warehouses for autonomous picking of diverse items with high generalization"
+
+  - name: "Skild AI Founded (CMU Spin-off)"
+    year: 2023
+    tags: [founding, cmu, foundation-model, startup]
+    parents: []
+    description: "Deepak Pathak and Abhinav Gupta spun Skild AI out of CMU to build a scalable general-purpose robot foundation model"
+
+  - name: "Collaborative Robotics Founded"
+    year: 2022
+    tags: [founding, cobot, human-robot, startup]
+    parents: []
+    description: "Brad Porter (ex-Amazon Robotics VP) founded Collaborative Robotics to build human-friendly mobile cobots for logistics"
+
+  - name: "Covariant RFM-1 (Robotics Foundation Model)"
+    year: 2024
+    tags: [foundation-model, multimodal, manipulation, language]
+    parents:
+      - name: "Covariant Brain for Warehouse Picking"
+        relation: extends
+    description: "Covariant released RFM-1, a robotics foundation model trained on real-world manipulation data for language-conditioned control"
+
+  - name: "Physical Intelligence Founded"
+    year: 2024
+    tags: [founding, foundation-model, manipulation, research]
+    parents: []
+    description: "Karol Hausman, Sergey Levine, Chelsea Finn, and others founded Physical Intelligence to build robot foundation models"
+
+  - name: "Physical Intelligence $400M Funding"
+    year: 2024
+    tags: [funding, venture-capital, milestone]
+    parents:
+      - name: "Physical Intelligence Founded"
+        relation: extends
+    description: "Physical Intelligence raised $400M at a $2.4B valuation led by Jeff Bezos and Thrive Capital"
+
+  - name: "pi-zero (pi0) Model"
+    year: 2024
+    tags: [foundation-model, manipulation, flow-matching, policy]
+    parents:
+      - name: "Physical Intelligence Founded"
+        relation: extends
+    description: "pi0 foundation model using flow matching for dexterous robotic manipulation across diverse tasks and embodiments"
+
+  - name: "pi0.5 Model"
+    year: 2025
+    tags: [foundation-model, generalist, manipulation, improved]
+    parents:
+      - name: "pi-zero (pi0) Model"
+        relation: extends
+    description: "Improved generalist policy model achieving broader task coverage and stronger zero-shot transfer across robot platforms"
+
+  - name: "Skild AI $300M Funding"
+    year: 2024
+    tags: [funding, venture-capital, foundation-model]
+    parents:
+      - name: "Skild AI Founded (CMU Spin-off)"
+        relation: extends
+    description: "Skild AI raised $300M at a $1.5B valuation to scale its general-purpose robot foundation model"
+
+  - name: "Covariant Team Acquired by Amazon"
+    year: 2024
+    tags: [acquisition, amazon, talent, warehouse]
+    parents:
+      - name: "Covariant RFM-1 (Robotics Foundation Model)"
+        relation: extends
+    description: "Amazon acqui-hired a large portion of Covariant's team and licensed its AI technology for warehouse robotics"

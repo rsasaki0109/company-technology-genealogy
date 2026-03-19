@@ -1,0 +1,102 @@
+name: Unitree & Agility Robotics
+description: >
+  Unitree Robotics, founded in 2016 in Hangzhou, China, rapidly became a leading
+  manufacturer of affordable legged robots, from quadrupeds (A1, Go1, Go2, B2)
+  to humanoids (H1, G1). Agility Robotics, founded in 2015 at Oregon State
+  University, pioneered bipedal robots with Cassie and commercialized the Digit
+  humanoid for warehouse logistics, partnering with Amazon and building the
+  world's first humanoid robot factory (RoboFab).
+source_awesome_lists: []
+
+methods:
+  - name: "Agility Robotics Founded"
+    year: 2015
+    tags: [founding, bipedal, oregon-state, research]
+    parents: []
+    description: "Jonathan Hurst and Damion Shelton founded Agility Robotics as an Oregon State University spin-off focused on bipedal locomotion"
+
+  - name: "Unitree Robotics Founded"
+    year: 2016
+    tags: [founding, quadruped, china, affordable]
+    parents: []
+    description: "Wang Xingxing founded Unitree Robotics in Hangzhou to build affordable high-performance legged robots"
+
+  - name: "Cassie Bipedal Robot"
+    year: 2017
+    tags: [bipedal, research, locomotion, agility]
+    parents:
+      - name: "Agility Robotics Founded"
+        relation: extends
+    description: "Cassie demonstrated robust outdoor bipedal walking using spring-mass locomotion principles without arms or torso"
+
+  - name: "Digit Humanoid Robot"
+    year: 2019
+    tags: [humanoid, bipedal, manipulation, logistics]
+    parents:
+      - name: "Cassie Bipedal Robot"
+        relation: extends
+    description: "Full humanoid evolution of Cassie with arms and torso, designed for package handling and warehouse logistics tasks"
+
+  - name: "Unitree A1 Quadruped"
+    year: 2020
+    tags: [quadruped, affordable, research, consumer]
+    parents:
+      - name: "Unitree Robotics Founded"
+        relation: extends
+    description: "Compact and affordable quadruped robot popular with researchers, priced significantly below competitors like Spot"
+
+  - name: "Unitree Go1"
+    year: 2021
+    tags: [quadruped, consumer, affordable, mass-market]
+    parents:
+      - name: "Unitree A1 Quadruped"
+        relation: extends
+    description: "Consumer-grade quadruped starting under $3,000, making legged robots accessible to hobbyists and educators"
+
+  - name: "Unitree B2 Industrial Quadruped"
+    year: 2023
+    tags: [quadruped, industrial, inspection, rugged]
+    parents:
+      - name: "Unitree A1 Quadruped"
+        relation: extends
+    description: "Industrial-grade quadruped designed for harsh environments with IP67 rating and heavy payload capacity"
+
+  - name: "Unitree Go2"
+    year: 2023
+    tags: [quadruped, consumer, affordable, lidar]
+    parents:
+      - name: "Unitree Go1"
+        relation: extends
+    description: "Next-gen consumer quadruped with optional LiDAR and improved AI capabilities starting at $1,600"
+
+  - name: "Unitree H1 Humanoid"
+    year: 2023
+    tags: [humanoid, bipedal, china, first]
+    parents:
+      - name: "Unitree Robotics Founded"
+        relation: extends
+    description: "Unitree's first humanoid robot capable of dynamic walking and running at up to 3.3 m/s"
+
+  - name: "Unitree G1 Humanoid"
+    year: 2024
+    tags: [humanoid, affordable, dexterous, mass-market]
+    parents:
+      - name: "Unitree H1 Humanoid"
+        relation: extends
+    description: "Compact affordable humanoid priced around $16,000 with dexterous hands and agile full-body motion"
+
+  - name: "Digit in Amazon Warehouses"
+    year: 2024
+    tags: [humanoid, amazon, warehouse, deployment, logistics]
+    parents:
+      - name: "Digit Humanoid Robot"
+        relation: extends
+    description: "Amazon began testing Digit humanoid robots for tote handling in fulfillment centers as part of warehouse automation"
+
+  - name: "Agility RoboFab Factory"
+    year: 2024
+    tags: [manufacturing, factory, humanoid, scale]
+    parents:
+      - name: "Digit Humanoid Robot"
+        relation: extends
+    description: "Agility opened RoboFab in Salem, Oregon, the world's first factory dedicated to mass-producing humanoid robots"
