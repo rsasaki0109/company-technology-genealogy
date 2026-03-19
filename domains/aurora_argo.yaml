@@ -1,0 +1,117 @@
+name: Aurora & Argo AI
+description: >
+  Aurora Innovation and Argo AI represent two parallel paths in autonomous driving
+  founded by veterans of Google's Self-Driving Car Project and Carnegie Mellon.
+  Aurora was founded in 2017 by Chris Urmson (ex-Google SDC lead) and focuses on
+  autonomous trucking. Argo AI was founded in 2016 by Bryan Salesky (also
+  ex-Google SDC) with $1B+ backing from Ford and VW, but shut down in 2022 when
+  both automakers withdrew funding. Aurora acquired Uber ATG in 2021 and became
+  the leading pure-play autonomous trucking company.
+source_awesome_lists: []
+
+methods:
+  - name: "Argo AI Founded"
+    year: 2016
+    tags: [founding, startup, pittsburgh]
+    parents: []
+    description: "Bryan Salesky (ex-Google SDC, CMU) founded Argo AI in Pittsburgh to build a full-stack self-driving system"
+
+  - name: "Aurora Innovation Founded"
+    year: 2017
+    tags: [founding, startup, chris-urmson]
+    parents: []
+    description: "Chris Urmson (ex-Google SDC lead), Sterling Anderson (ex-Tesla Autopilot), and Drew Bagnell (CMU) co-founded Aurora"
+
+  - name: "Ford $1B Investment in Argo AI"
+    year: 2017
+    tags: [investment, ford, partnership]
+    parents:
+      - name: "Argo AI Founded"
+        relation: extends
+    description: "Ford invested $1 billion in Argo AI, making it the primary AV technology partner for Ford vehicles"
+
+  - name: "Argo Perception and Planning Stack"
+    year: 2018
+    tags: [perception, planning, urban-driving]
+    parents:
+      - name: "Ford $1B Investment in Argo AI"
+        relation: extends
+    description: "Full-stack AV system tested on Ford Fusion Hybrid vehicles in Pittsburgh, Miami, and Washington DC"
+
+  - name: "VW Investment in Argo AI"
+    year: 2019
+    tags: [investment, volkswagen, partnership, europe]
+    parents:
+      - name: "Argo AI Founded"
+        relation: extends
+    description: "Volkswagen Group invested $2.6B in Argo AI (cash and VW AV unit), aiming for European robotaxi deployment"
+
+  - name: "Aurora FirstLight LiDAR"
+    year: 2019
+    tags: [lidar, hardware, long-range, sensing]
+    parents:
+      - name: "Aurora Innovation Founded"
+        relation: extends
+    description: "Proprietary FMCW LiDAR technology acquired via Blackmore Sensors, enabling 300m+ detection for highway trucking"
+
+  - name: "Aurora Acquires Uber ATG"
+    year: 2021
+    tags: [acquisition, uber, atg, talent]
+    parents:
+      - name: "Aurora Innovation Founded"
+        relation: combines
+    description: "Aurora acquired Uber's Advanced Technologies Group in $4B deal, gaining engineering talent, IP, and Uber partnership"
+
+  - name: "Aurora Driver (Trucking Focus)"
+    year: 2021
+    tags: [trucking, autonomy-stack, aurora-driver]
+    parents:
+      - name: "Aurora FirstLight LiDAR"
+        relation: extends
+      - name: "Aurora Acquires Uber ATG"
+        relation: combines
+    description: "Unified autonomy platform branded Aurora Driver, pivoting primary focus to Class 8 autonomous trucking"
+
+  - name: "Aurora Virtual Testing Suite"
+    year: 2021
+    tags: [simulation, testing, safety, validation]
+    parents:
+      - name: "Aurora Driver (Trucking Focus)"
+        relation: extends
+    description: "Large-scale simulation platform for validating Aurora Driver across billions of virtual miles and edge cases"
+
+  - name: "Argo AI Shutdown"
+    year: 2022
+    tags: [shutdown, ford, volkswagen, funding]
+    parents:
+      - name: "Ford $1B Investment in Argo AI"
+        relation: replaces
+      - name: "VW Investment in Argo AI"
+        relation: replaces
+    description: "Ford and VW withdrew funding; Argo AI ceased operations with ~2000 employees losing jobs, IP split between backers"
+
+  - name: "Aurora Partnership with PACCAR and Volvo"
+    year: 2023
+    tags: [partnership, paccar, volvo, oem, trucking]
+    parents:
+      - name: "Aurora Driver (Trucking Focus)"
+        relation: extends
+    description: "Strategic partnerships with PACCAR (Peterbilt/Kenworth) and Volvo Trucks for production autonomous truck platforms"
+
+  - name: "Aurora SPAC IPO"
+    year: 2021
+    tags: [ipo, spac, public-market]
+    parents:
+      - name: "Aurora Innovation Founded"
+        relation: extends
+    description: "Aurora went public via SPAC merger with Reinvent Technology Partners Y at $13B valuation"
+
+  - name: "Aurora Commercial Launch Texas"
+    year: 2024
+    tags: [commercial, texas, freight, driverless]
+    parents:
+      - name: "Aurora Driver (Trucking Focus)"
+        relation: extends
+      - name: "Aurora Partnership with PACCAR and Volvo"
+        relation: extends
+    description: "Aurora launched commercial driverless trucking operations on Texas freight corridors between Dallas and Houston"

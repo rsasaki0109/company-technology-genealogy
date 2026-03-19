@@ -1,0 +1,78 @@
+name: Applied Intuition & Simulation
+description: >
+  Applied Intuition was founded in 2017 to provide simulation and infrastructure
+  software for autonomous vehicle development. The company rapidly grew to serve
+  major OEMs and AD companies, reaching a valuation exceeding $6 billion by 2024.
+  Applied Intuition expanded beyond simulation into full AD stack offerings and
+  government/defense contracts, while competing with open-source alternatives like
+  CARLA and specialized vendors such as Cognata and rFpro.
+source_awesome_lists: []
+
+methods:
+  - name: "Applied Intuition Founded"
+    year: 2017
+    tags: [founding, simulation, startup]
+    parents: []
+    description: "Qasar Younis and Peter Ludwig founded Applied Intuition to build simulation tools for autonomous vehicle development"
+
+  - name: "ADAS/AD Simulation Platform"
+    year: 2018
+    tags: [product, simulation, testing, validation]
+    parents:
+      - name: "Applied Intuition Founded"
+        relation: extends
+    description: "Core simulation product enabling autonomous driving teams to test perception and planning in virtual environments"
+
+  - name: "CARLA Open-Source Simulator (Competitor)"
+    year: 2018
+    tags: [competitor, open-source, carla, simulation]
+    parents: []
+    description: "Open-source autonomous driving simulator from CVC Barcelona, serving as a key alternative to commercial platforms"
+
+  - name: "Series C $175M Valuation"
+    year: 2021
+    tags: [corporate, funding, series-c]
+    parents:
+      - name: "ADAS/AD Simulation Platform"
+        relation: extends
+    description: "Applied Intuition raised Series C funding at a $1.75 billion valuation, establishing it as a simulation market leader"
+
+  - name: "Government and Defense Contracts"
+    year: 2023
+    tags: [government, defense, contracts]
+    parents:
+      - name: "Series C $175M Valuation"
+        relation: extends
+    description: "Applied Intuition expanded into government and defense autonomous systems simulation and testing"
+
+  - name: "Acquisition of Embark Trucks Technology"
+    year: 2024
+    tags: [acquisition, embark, trucking, technology]
+    parents:
+      - name: "Government and Defense Contracts"
+        relation: extends
+    description: "Applied Intuition acquired technology assets from autonomous trucking company Embark after its wind-down"
+
+  - name: "Applied Intuition $6B+ Valuation"
+    year: 2024
+    tags: [corporate, funding, valuation]
+    parents:
+      - name: "Series C $175M Valuation"
+        relation: extends
+    description: "Applied Intuition reached a valuation exceeding $6 billion, reflecting strong demand for AV infrastructure software"
+
+  - name: "AV Stack Product (Full AD Stack)"
+    year: 2024
+    tags: [product, av-stack, full-stack, autonomous-driving]
+    parents:
+      - name: "ADAS/AD Simulation Platform"
+        relation: extends
+      - name: "Acquisition of Embark Trucks Technology"
+        relation: extends
+    description: "Full autonomous driving software stack product enabling customers to deploy AD capabilities beyond simulation"
+
+  - name: "Cognata and rFpro (Competitors)"
+    year: 2024
+    tags: [competitor, cognata, rfpro, simulation]
+    parents: []
+    description: "Cognata (digital twin simulation) and rFpro (driving simulation) continued as specialized competitors in the AV simulation space"

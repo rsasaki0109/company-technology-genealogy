@@ -1,0 +1,94 @@
+name: Surgical Robots
+description: >
+  Surgical robotics was pioneered by Intuitive Surgical, whose da Vinci system
+  has dominated minimally invasive surgery since FDA approval in 2000. Over two
+  decades, Intuitive iterated through multiple generations while expanding into
+  lung biopsy with Ion. Competitors including Medtronic, CMR Surgical, Stryker,
+  and Johnson & Johnson have entered with alternatives targeting different
+  specialties and cost structures.
+source_awesome_lists: []
+
+methods:
+  - name: "Intuitive Surgical founded"
+    year: 1995
+    tags: [intuitive-surgical, founded, surgical-robotics]
+    parents: []
+    description: "Intuitive Surgical founded in Sunnyvale to commercialize robotic-assisted minimally invasive surgery"
+
+  - name: "da Vinci system FDA approved"
+    year: 2000
+    tags: [intuitive-surgical, da-vinci, fda, minimally-invasive]
+    parents:
+      - name: "Intuitive Surgical founded"
+        relation: extends
+    description: "da Vinci Surgical System received FDA clearance, becoming the first robotic surgical system for general laparoscopic surgery"
+
+  - name: "Stryker Mako (orthopedic)"
+    year: 2006
+    tags: [stryker, mako, orthopedic, joint-replacement]
+    parents: []
+    description: "Mako Surgical (later acquired by Stryker) introduced robotic-arm assisted orthopedic surgery for joint replacement"
+
+  - name: "da Vinci Si"
+    year: 2009
+    tags: [intuitive-surgical, da-vinci-si, hd-vision, dual-console]
+    parents:
+      - name: "da Vinci system FDA approved"
+        relation: extends
+    description: "da Vinci Si introduced HD 3D vision, dual-console capability for training, and enhanced instrument flexibility"
+
+  - name: "da Vinci Xi"
+    year: 2014
+    tags: [intuitive-surgical, da-vinci-xi, multi-quadrant, overhead-boom]
+    parents:
+      - name: "da Vinci Si"
+        relation: extends
+    description: "da Vinci Xi featured overhead boom architecture enabling multi-quadrant surgery and improved access"
+
+  - name: "da Vinci SP (single-port)"
+    year: 2018
+    tags: [intuitive-surgical, da-vinci-sp, single-port, minimally-invasive]
+    parents:
+      - name: "da Vinci Xi"
+        relation: extends
+    description: "da Vinci SP system enabled single-port surgery through one small incision with three multi-jointed instruments"
+
+  - name: "Intuitive Ion (lung biopsy)"
+    year: 2019
+    tags: [intuitive-surgical, ion, bronchoscopy, lung-biopsy]
+    parents:
+      - name: "Intuitive Surgical founded"
+        relation: extends
+    description: "Intuitive launched Ion robotic-assisted bronchoscopy platform for minimally invasive lung biopsy"
+
+  - name: "CMR Surgical Versius"
+    year: 2019
+    tags: [cmr-surgical, versius, modular, portable]
+    parents: []
+    description: "CMR Surgical launched Versius, a modular and portable surgical robot system designed for cost-effective global adoption"
+
+  - name: "Medtronic Hugo RAS"
+    year: 2021
+    tags: [medtronic, hugo, robotic-assisted-surgery, modular]
+    parents: []
+    description: "Medtronic introduced Hugo robotic-assisted surgery system as a modular, lower-cost alternative to da Vinci"
+
+  - name: "da Vinci 5"
+    year: 2024
+    tags: [intuitive-surgical, da-vinci-5, force-feedback, next-generation]
+    parents:
+      - name: "da Vinci SP (single-port)"
+        relation: extends
+    description: "da Vinci 5 introduced force feedback haptics and 10,000x compute increase for next-generation surgical precision"
+
+  - name: "J&J Ottava"
+    year: 2024
+    tags: [johnson-and-johnson, ottava, surgical-robot, digital-surgery]
+    parents: []
+    description: "Johnson & Johnson advanced Ottava robotic surgical system with six arms and a digital surgery ecosystem"
+
+  - name: "Vicarious Surgical acquired"
+    year: 2024
+    tags: [vicarious-surgical, acquisition, miniature, single-incision]
+    parents: []
+    description: "Vicarious Surgical, developer of miniature single-incision surgical robot technology, was acquired amid market consolidation"

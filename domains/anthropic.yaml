@@ -1,0 +1,112 @@
+name: Anthropic
+description: >
+  Anthropic was founded in 2021 by Dario Amodei, Daniela Amodei, and other
+  former OpenAI researchers focused on AI safety. The company developed the
+  Claude family of AI assistants using Constitutional AI and Reinforcement
+  Learning from Human Feedback. Anthropic has raised significant funding from
+  Amazon and Google, and established itself as a frontier AI lab with a strong
+  emphasis on responsible scaling and interpretability research.
+source_awesome_lists: []
+
+methods:
+  - name: "Anthropic Founded"
+    year: 2021
+    tags: [founding, ai-safety, research, ex-openai]
+    parents: []
+    description: "Dario Amodei, Daniela Amodei, and former OpenAI researchers founded Anthropic to build safe and reliable AI systems"
+
+  - name: "Constitutional AI Paper"
+    year: 2022
+    tags: [research, alignment, safety, training-method]
+    parents:
+      - name: "Anthropic Founded"
+        relation: extends
+    description: "Published Constitutional AI method for training harmless AI assistants using a set of principles without human feedback labels"
+
+  - name: "Claude 1"
+    year: 2023
+    tags: [language-model, assistant, safety, launch]
+    parents:
+      - name: "Constitutional AI Paper"
+        relation: extends
+    description: "First public release of Claude AI assistant with strong performance on helpfulness and reduced harmful outputs"
+
+  - name: "Claude 2"
+    year: 2023
+    tags: [language-model, assistant, long-context, improved]
+    parents:
+      - name: "Claude 1"
+        relation: extends
+    description: "Major upgrade with 100K context window, improved coding, math, and reasoning over Claude 1"
+
+  - name: "Amazon Partnership ($4B+ Investment)"
+    year: 2023
+    tags: [partnership, amazon, aws, investment]
+    parents:
+      - name: "Anthropic Founded"
+        relation: extends
+    description: "Amazon invested up to $4B in Anthropic, making AWS a primary cloud provider and integrating Claude into Amazon Bedrock"
+
+  - name: "Google Cloud Partnership"
+    year: 2023
+    tags: [partnership, google, gcp, investment]
+    parents:
+      - name: "Anthropic Founded"
+        relation: extends
+    description: "Google invested $2B+ in Anthropic with Claude available on Google Cloud Vertex AI platform"
+
+  - name: "Responsible Scaling Policy"
+    year: 2023
+    tags: [safety, policy, governance, scaling]
+    parents:
+      - name: "Constitutional AI Paper"
+        relation: extends
+    description: "Anthropic published its Responsible Scaling Policy framework with AI Safety Levels for evaluating model risk"
+
+  - name: "Claude 3 (Opus / Sonnet / Haiku)"
+    year: 2024
+    tags: [language-model, family, multimodal, vision]
+    parents:
+      - name: "Claude 2"
+        relation: extends
+    description: "Three-tier model family with vision capabilities; Opus set new benchmarks, Sonnet balanced performance and cost"
+
+  - name: "Claude 3.5 Sonnet"
+    year: 2024
+    tags: [language-model, coding, performance, frontier]
+    parents:
+      - name: "Claude 3 (Opus / Sonnet / Haiku)"
+        relation: extends
+    description: "Major mid-cycle upgrade surpassing Claude 3 Opus on most benchmarks at Sonnet-tier cost and speed"
+
+  - name: "Computer Use (Tool Use)"
+    year: 2024
+    tags: [agent, tool-use, computer, automation]
+    parents:
+      - name: "Claude 3.5 Sonnet"
+        relation: extends
+    description: "Claude gained the ability to interact with computer interfaces, navigating GUIs and using tools autonomously"
+
+  - name: "Claude 4 Opus"
+    year: 2025
+    tags: [language-model, frontier, reasoning, coding]
+    parents:
+      - name: "Claude 3.5 Sonnet"
+        relation: extends
+    description: "Frontier model with state-of-the-art reasoning, coding, and agentic capabilities for complex multi-step tasks"
+
+  - name: "Claude 4.5 Sonnet"
+    year: 2025
+    tags: [language-model, balanced, writing, coding]
+    parents:
+      - name: "Claude 4 Opus"
+        relation: extends
+    description: "Balanced model combining strong reasoning with natural writing and fast response times at Sonnet-tier pricing"
+
+  - name: "Claude Code"
+    year: 2025
+    tags: [developer-tool, cli, coding, agentic]
+    parents:
+      - name: "Claude 4 Opus"
+        relation: extends
+    description: "Agentic CLI coding tool enabling Claude to read, edit, and manage codebases directly from the terminal"

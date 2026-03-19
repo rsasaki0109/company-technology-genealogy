@@ -1,0 +1,120 @@
+name: Industrial Robots
+description: >
+  Industrial robotics began with Unimate in 1961 and grew through decades of
+  innovation by FANUC, ABB, and KUKA. The 2000s-2010s saw the rise of
+  collaborative robots (cobots) pioneered by Universal Robots, which expanded
+  automation to small and medium enterprises. Major players responded with
+  their own cobot lines, while new entrants like Franka Emika and Rainbow
+  Robotics pushed the boundaries of dexterous manipulation.
+source_awesome_lists: []
+
+methods:
+  - name: "Unimate (first industrial robot)"
+    year: 1961
+    tags: [unimate, gm, first-robot, automotive]
+    parents: []
+    description: "First industrial robot installed at GM's Ternstedt plant for die casting, invented by George Devol and Joseph Engelberger"
+
+  - name: "FANUC founded"
+    year: 1972
+    tags: [fanuc, founded, japan, cnc]
+    parents: []
+    description: "FANUC established as a subsidiary of Fujitsu, initially focused on CNC numerical control systems"
+
+  - name: "KUKA IR 601"
+    year: 1973
+    tags: [kuka, ir-601, six-axis, industrial]
+    parents: []
+    description: "KUKA developed the IR 601, one of the first industrial robots with six electromechanically driven axes"
+
+  - name: "FANUC CNC to robotics"
+    year: 1974
+    tags: [fanuc, robotics, cnc, diversification]
+    parents:
+      - name: "FANUC founded"
+        relation: extends
+    description: "FANUC expanded from CNC systems into industrial robotics, beginning its path to global robot market leadership"
+
+  - name: "ABB IRB 6"
+    year: 1974
+    tags: [abb, irb-6, electric, industrial]
+    parents: []
+    description: "ABB (then ASEA) introduced the IRB 6, one of the first commercially available all-electric industrial robots"
+
+  - name: "Universal Robots UR5"
+    year: 2008
+    tags: [universal-robots, ur5, cobot, collaborative]
+    parents: []
+    description: "Universal Robots launched the UR5, pioneering lightweight collaborative robots safe for human co-working"
+
+  - name: "KUKA LBR iiwa"
+    year: 2013
+    tags: [kuka, iiwa, collaborative, torque-sensing]
+    parents:
+      - name: "KUKA IR 601"
+        relation: extends
+    description: "KUKA launched LBR iiwa, the first series-produced sensitive collaborative robot with torque sensors in every axis"
+
+  - name: "UR cobots market dominance"
+    year: 2015
+    tags: [universal-robots, cobot, market-leader, ecosystem]
+    parents:
+      - name: "Universal Robots UR5"
+        relation: extends
+    description: "Universal Robots achieved dominant cobot market share with UR3/5/10 family and UR+ ecosystem"
+
+  - name: "Teradyne acquires Universal Robots"
+    year: 2015
+    tags: [teradyne, universal-robots, acquisition]
+    parents:
+      - name: "UR cobots market dominance"
+        relation: extends
+    description: "Teradyne acquired Universal Robots for $285M, providing capital to scale cobot production globally"
+
+  - name: "Doosan Robotics"
+    year: 2015
+    tags: [doosan, cobot, korea, collaborative]
+    parents: []
+    description: "Doosan Robotics founded in South Korea to develop collaborative robots for manufacturing and services"
+
+  - name: "KUKA acquired by Midea"
+    year: 2016
+    tags: [kuka, midea, acquisition, china]
+    parents:
+      - name: "KUKA LBR iiwa"
+        relation: extends
+    description: "Chinese appliance giant Midea acquired KUKA for EUR 4.5B, marking major Chinese entry into robotics"
+
+  - name: "Techman collaborative robot"
+    year: 2016
+    tags: [techman, cobot, vision, taiwan]
+    parents: []
+    description: "Techman Robot launched cobots with built-in vision systems, simplifying deployment for SME automation"
+
+  - name: "Franka Emika Panda"
+    year: 2017
+    tags: [franka-emika, panda, torque-controlled, research]
+    parents: []
+    description: "Franka Emika released Panda, a torque-controlled 7-DOF robot arm popular in research for dexterous manipulation"
+
+  - name: "FANUC CRX collaborative series"
+    year: 2020
+    tags: [fanuc, crx, cobot, collaborative]
+    parents:
+      - name: "FANUC CNC to robotics"
+        relation: extends
+    description: "FANUC launched CRX series of lightweight cobots, entering the collaborative robot market with industrial reliability"
+
+  - name: "ABB GoFa / SWIFTI cobots"
+    year: 2021
+    tags: [abb, gofa, swifti, cobot, collaborative]
+    parents:
+      - name: "ABB IRB 6"
+        relation: extends
+    description: "ABB expanded cobot lineup with GoFa higher-payload and SWIFTI higher-speed collaborative robots"
+
+  - name: "Rainbow Robotics RB-Y1"
+    year: 2024
+    tags: [rainbow-robotics, rb-y1, mobile-manipulator, humanoid]
+    parents: []
+    description: "Rainbow Robotics unveiled RB-Y1 dual-arm mobile manipulator bridging cobots and humanoid form factors"

@@ -1,0 +1,71 @@
+name: Horizon Robotics
+description: >
+  Horizon Robotics was founded in 2015 by Yu Kai, former head of Baidu's Institute
+  of Deep Learning. The company develops AI chips and full-stack ADAS/AD solutions
+  for the automotive industry, primarily serving Chinese OEMs. Its Journey series of
+  chips has been widely adopted by automakers including BYD, Volkswagen, and Li Auto.
+  Horizon went public on the Hong Kong Stock Exchange in 2024.
+source_awesome_lists: []
+
+methods:
+  - name: "Horizon Robotics Founded by Yu Kai"
+    year: 2015
+    tags: [founding, china, ai-chip, yu-kai]
+    parents: []
+    description: "Former Baidu IDL head Yu Kai founded Horizon Robotics in Beijing to develop edge AI processors for autonomous driving"
+
+  - name: "Journey 2 Chip"
+    year: 2019
+    tags: [hardware, chip, journey-2, adas]
+    parents:
+      - name: "Horizon Robotics Founded by Yu Kai"
+        relation: extends
+    description: "Second-generation automotive AI chip delivering 4 TOPS, targeting L2 ADAS applications for mass-market vehicles"
+
+  - name: "Journey 3 Chip"
+    year: 2020
+    tags: [hardware, chip, journey-3, adas]
+    parents:
+      - name: "Journey 2 Chip"
+        relation: extends
+    description: "Third-generation chip with improved performance for L2+ ADAS, adopted by multiple Chinese automakers"
+
+  - name: "Journey 5 Chip"
+    year: 2021
+    tags: [hardware, chip, journey-5, high-performance, ad]
+    parents:
+      - name: "Journey 3 Chip"
+        relation: extends
+    description: "High-performance chip delivering 128 TOPS for L4 autonomous driving and advanced ADAS applications"
+
+  - name: "Partnerships with BYD, VW, Li Auto"
+    year: 2022
+    tags: [partnership, byd, volkswagen, li-auto, oem]
+    parents:
+      - name: "Journey 5 Chip"
+        relation: extends
+    description: "Horizon secured major design wins with BYD, Volkswagen (through CARIAD investment), and Li Auto for series production"
+
+  - name: "Horizon IPO Hong Kong"
+    year: 2024
+    tags: [corporate, ipo, hong-kong]
+    parents:
+      - name: "Partnerships with BYD, VW, Li Auto"
+        relation: extends
+    description: "Horizon Robotics went public on the Hong Kong Stock Exchange, raising approximately $700 million"
+
+  - name: "SuperDrive Full-Stack ADAS Solution"
+    year: 2024
+    tags: [product, superdrive, adas, full-stack]
+    parents:
+      - name: "Journey 5 Chip"
+        relation: extends
+    description: "Integrated full-stack ADAS solution combining Horizon hardware and software for OEM deployment"
+
+  - name: "Journey 6 Chip"
+    year: 2025
+    tags: [hardware, chip, journey-6, next-gen]
+    parents:
+      - name: "Journey 5 Chip"
+        relation: replaces
+    description: "Next-generation automotive AI chip with significantly increased compute for advanced autonomous driving features"
