@@ -117,7 +117,7 @@ def domain_to_graph_data(domains: list[dict]) -> dict:
             "size": size,
             "color": {"background": base_color, "border": "#555", "highlight": {"background": base_color, "border": "#fff"}},
             "borderWidth": 2,
-            "font": {"size": 24, "color": "white"},
+            "font": {"size": 30, "color": "white"},
             "level": year_to_level[m["year"]],
             "year": m["year"],
             "description": desc,
